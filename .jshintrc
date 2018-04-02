@@ -1,0 +1,14 @@
+{
+  "browser": true,
+  "predef": ["opts", "vue"],
+  "esversion": 6,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "jQuery": true
+  },
+  "asi": true,
+  "esversion": 6,
+  "boss": true
+}

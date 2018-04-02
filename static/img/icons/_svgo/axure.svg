@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
+  <defs>
+    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(4 6)">
+    <path fill="#000000" fill-opacity=".1" d="M39.462,46.578 C60.859,46.578 78.205,41.468 78.205,35.166 C78.205,28.863 60.859,23.753 39.462,23.753 C18.065,23.753 0.719,28.863 0.719,35.166 C0.719,41.469 18.065,46.578 39.462,46.578 Z" filter="url(#a)"/>
+    <g transform="translate(19)">
+      <polygon fill="#94CA44" points=".414 .777 40.584 .777 40.584 9.052 .414 9.052"/>
+      <g transform="translate(0 12)">
+        <polygon fill="#049ADC" points=".44 .406 12.283 .406 12.283 27.97 .44 27.97"/>
+        <polygon fill="#F2208A" points="16.082 .406 40.385 .406 40.385 27.97 16.082 27.97"/>
+      </g>
+      <polygon fill="#32B1E2" points=".44 12.35 12.283 12.35 12.283 22.607 .44 25.39"/>
+      <polygon fill="#FC339C" points="16.082 12.35 40.272 12.35 40.272 16.092 16.082 22.365 16.082 12.35"/>
+    </g>
+  </g>
+</svg>

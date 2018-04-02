@@ -1,0 +1,95 @@
+// BASE LAYOUT
+
+html {
+  //
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  max-width: 1000px;
+  // max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  background-color: $ivory;
+  background: url('./src/assets/img/bg/graphy_2.png') repeat;
+  @include shadow;
+  @include clearfix;
+  box-shadow: 3px 5px 4px transparentize(black, 0.8),
+              3px 3px 5px transparentize(black, 0.2);
+  // background: susy-svg-grid() no-repeat scroll;
+}
+
+header,
+footer {
+  width: span(12 wide);
+  color: $ivory;
+  background: url('./src/assets/img/bg/bg_bag_dk.jpg') repeat;
+  @include shadow;
+  @include clearfix;
+}
+
+main {
+  width: span(12 wide);
+  margin: 1em 0;
+  @include clearfix;
+  // background: susy-svg-grid() no-repeat scroll;
+}
+
+.sectionOne,
+.sectionTwo {
+  // width: span(48%);
+  width: span(6 narrow);
+  float: left;
+  // margin-left: gutter();
+
+
+  @include breakpoint($bg) {
+    // background: blue;
+  }
+  @include breakpoint($md) {
+    // width: 100%;
+    width: span(12);
+    // background: beige;
+  }
+  @include breakpoint($sm) {
+    // background: beige;
+    // width: span(100%);
+    width: span(12);
+  }
+  @include breakpoint($xsm) {
+    // background: beige;
+    // width: span(100%);
+    width: span(12);
+  }
+}
+
+.sectionOne {
+  // clear: left;
+  // padding-left: 0.5em;
+  // @include clearfix;
+  margin-left: gutter();
+  // margin-right: gutter();
+}
+
+.sectionTwo {
+  // width: span(6 narrow);
+  margin-left: gutter();
+}
+
+.VueCarousel,
+.about,
+.quote {
+  width: span(12);
+}
+
+
+
+
+
+
+
+
+

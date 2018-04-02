@@ -1,0 +1,41 @@
+.innerGrid .contentGrid {
+  display: grid;  // <-- CONTENT GRID
+  margin-top: .75em;
+  margin-bottom: .5em;
+  // width: 100%;
+
+  @media (min-width: 1040px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'headDiv     headDiv'
+      'sectionOne  sectionTwo'
+  }
+
+  @media (max-width: 1040px) {
+    // margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      'headDiv'
+      'sectionOne'
+      'sectionTwo';
+  }
+
+  .sectionOne {
+    padding-right: .5em;
+    padding-left: 1em;
+    @media screen and (max-width: 1040px) {
+      // padding: 0;
+      // padding-bottom: 1em;
+      // padding-right: .5em;
+      // padding-left: 1.3em;
+    }
+  }
+  .sectionTwo {
+    padding-left: .5em;
+    padding-right: 1.3em;
+    @media screen and (max-width: 1040px) {
+      padding: 0 1em;
+    }
+  }
+
+}

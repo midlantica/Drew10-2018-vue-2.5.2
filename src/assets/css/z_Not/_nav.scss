@@ -1,0 +1,277 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>
+//  BASE
+// >>>>>>>>>>>>>>>>>>>>>>>>>
+
+.nav {
+  // background: url(bg/bg01-bl.png) repeat;
+  // @include span(10 of 12);
+  padding: 0rem 1rem;
+}
+
+.nav h1 {
+  display: block;
+  float: left;
+  margin: 0.16em 0 .2em 0.1em;
+  padding: 0;
+  font-family: $font-head;
+  font-size: 5em;
+  color: $ivory;
+  @include text-shadow(rgba($accent-red, 1) 5px 0px 3px);
+  line-height: 90%;
+  font-weight: normal;
+  // font-size: 6.4em;
+}
+
+.nav h1 a {
+  margin: 0em 0 0em 0;
+  text-decoration: none;
+  &:visited {
+    color: $ivory;
+  }
+}
+
+.nav h1 a:hover {
+  color: $accent;
+}
+
+.nav h2 {
+  font-family: $font-subhead;
+  font-size: 2.125em;
+  margin: 0.49em 0 0 .4em;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  width: 205px;
+  color: $ivory;
+  @include text-shadow(rgba($accent-red, 1) 3px 0px 3px);
+  letter-spacing: 0.06em;
+  line-height: .968em;
+  font-weight: normal;
+}
+
+.nav a {
+  color: $ivory;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.contact {
+  color: $ivory;
+  margin: .55em 1em 0 0;
+  padding: 0;
+  display: block;
+  float: right;
+  font-family: $font-subhead;
+  font-size: 1.5em;
+  text-align: center;
+
+  .email {
+    line-height: 1.1em;
+    margin: .75em 0 0 0;
+    padding: 0;
+    letter-spacing: .05em;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .resume {
+    font-size: 0.745em;
+    line-height: 1em;
+    margin: .0em 0 0 0;
+    padding: 0;
+    letter-spacing: .05em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>
+//  $SM
+// >>>>>>>>>>>>>>>>>>>>>>>>>
+
+@include breakpoint($sm) {
+  .nav h1 {
+    font-size: 4.3em;
+    margin: 0.75em 0em 0;
+    display: block;
+    float: left;
+    clear: left;
+    line-height: 85%
+    // background-color: orange;
+
+  }
+
+  .nav h2 {
+    font-size: 3.1em;
+    margin: 0.15em 0 0em 0;
+    letter-spacing: 1px;
+    display: block;
+    float: left;
+    clear: both;
+    width: auto;
+    // background: red;
+
+  }
+
+  .nav .contact {
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: right;
+    width: 100%;
+    // background-color: red;
+  }
+
+  .nav .contact .email,
+  .nav .contact .resume {
+    font-size: .8em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    float: left;
+    display: block;
+  }
+
+  .nav .contact .email {
+    line-height: 1.3em;
+    padding: 0;
+    letter-spacing: .08em;
+    // text-align: center;
+    letter-spacing: 1px;
+    // width: auto;
+    margin-right: 1em;
+  }
+
+  .nav .contact .resume {
+    line-height: 1.3em;
+    // margin: 0;
+    padding: 0;
+    letter-spacing: .08em;
+    // text-align: center;
+    letter-spacing: 1px;
+    // width: auto;
+  }
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>
+//  $MD
+// >>>>>>>>>>>>>>>>>>>>>>>>
+@include breakpoint($md) {
+  .nav h1 {
+    font-size: 5.8em;
+    margin: .1em 0 0;
+    display: block;
+    float: left;
+    clear: left;
+    // background-color: orange;
+  }
+
+  .nav h2 {
+    font-size: 2.55em;
+    margin: 0 0 .1em;
+    letter-spacing: 1px;
+    display: block;
+    // float: left;
+    clear: both;
+    width: auto;
+  }
+
+  .nav .contact {
+    float: left;
+    clear: left;
+    margin: 0 0 0.5em;
+    padding: 0;
+    // background: red;
+  }
+
+  .nav .contact .email,
+  .nav .contact .resume {
+    font-size: 0.8em;
+    line-height: 1.3em;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 0em
+  }
+
+  .nav .contact .email {
+    padding: 0;
+    letter-spacing: 1px;
+    clear: left;
+  }
+
+  .nav .contact .resume {
+    padding: 0;
+    margin-left: 1em;
+    // clear: left;
+    // background: red;
+
+  }
+}
+
+// >>>>>>>>>>>>>>>>>>
+//  $MDLG
+// >>>>>>>>>>>>>>>>>
+@include breakpoint($mdlg) {
+  .nav h1 {
+    font-size: 4.8em;
+    margin: .15em 0 -4px -4px;
+    display: block;
+    float: left;
+    clear: left;
+    // background-color: orange;
+  }
+
+  .nav h2 {
+    font-size: 2.25em;
+    margin: 0.2em 0 0.4em 0;
+    letter-spacing: 0em;
+    display: block;
+    float: left;
+    clear: left;
+    width: auto;
+  }
+
+  .nav .contact {
+    margin: -2em 1em 0 0;
+    padding: 0;
+    float: right;
+    clear: right;
+    width: auto;
+    // background: red;
+  }
+
+  .nav .contact .email {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .08em;
+    text-align: center;
+    letter-spacing: 1px;
+    width: auto;
+  }
+
+  .nav .contact .resume {
+    font-size: .96em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    width: auto;
+    // background: red;
+
+  }
+}
+
+
