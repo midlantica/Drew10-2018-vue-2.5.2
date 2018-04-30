@@ -21,6 +21,7 @@
       text-align: center;
       letter-spacing: .08em;
       font-weight: bold;
+      @include font-smoothing(on);
     }
     cite {
       font-size: .7em;

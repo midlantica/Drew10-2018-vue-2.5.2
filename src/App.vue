@@ -23,7 +23,6 @@
 
 <style lang="scss">
   @import "./src/assets/css/_base.scss";
-  @import "./src/assets/css/_mixins.scss";
   @import "./src/assets/css/_layout.scss";
   @import "./src/assets/css/_innerGrid.scss";
   @import "./src/assets/css/_styles.scss";
