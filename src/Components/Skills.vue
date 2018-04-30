@@ -1,19 +1,50 @@
 <template>
   <div class='skills'>
-    <div class="icon uiux" title="UI/UX"></div>
-    <div class="icon html5" title="html5"></div>
-    <div class="icon css3" title="CSS3"></div>
-    <div class="icon javascript" title="JavaScript"></div>
-    <div class="icon sketch" title="Sketch"></div>
-    <div class="icon sass" title="SASS"></div>
-    <div class="icon vue" title="Vue.js"></div>
-    <div class="icon svg" title="SVG"></div>
-    <div class="icon terminal" title="Command Line"></div>
-    <div class="icon npm" title="NPM"></div>
-    <div class="icon webpack" title="Webpack"></div>
-    <div class="icon axure" title="Axure"></div>
+    <iconUiux class="uiux" />
+    <iconHtml5 class="html5" />
+    <iconCss3 class="css3" />
+    <iconJs class="js" />
+    <iconSketch class="sketch" />
+    <iconSass class="sass" />
+    <iconVue class="vue" />
+    <iconSvg class="svg" />
+    <iconTerminal class="terminal" />
+    <iconNpm class="npm" />
+    <iconWebpack class="webpack" />
+    <iconAxure class="axure" />
   </div>
 </template>
+
+<script>
+  import iconUiux from '@/Components/Icons/icon-uiux'
+  import iconHtml5 from '@/Components/Icons/icon-html5'
+  import iconCss3 from '@/Components/Icons/icon-css3'
+  import iconJs from '@/Components/Icons/icon-js'
+  import iconSketch from '@/Components/Icons/icon-sketch'
+  import iconSass from '@/Components/Icons/icon-sass'
+  import iconVue from '@/Components/Icons/icon-vue'
+  import iconSvg from '@/Components/Icons/icon-svg'
+  import iconTerminal from '@/Components/Icons/icon-terminal'
+  import iconNpm from '@/Components/Icons/icon-npm'
+  import iconWebpack from '@/Components/Icons/icon-webpack'
+  import iconAxure from '@/Components/Icons/icon-axure'
+  export default {
+    components: {
+      iconUiux,
+      iconHtml5,
+      iconCss3,
+      iconJs,
+      iconSketch,
+      iconSass,
+      iconVue,
+      iconSvg,
+      iconTerminal,
+      iconNpm,
+      iconWebpack,
+      iconAxure
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
   @import "./src/assets/css/_base.scss";
