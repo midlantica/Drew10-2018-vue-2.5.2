@@ -1020,107 +1020,107 @@
 
     &.uiux {
       grid-area: uiux;
-      background: url("../assets/img/icons/uiux.svg");
+      // background: url("../assets/img/icons/uiux.svg");
     }
 
     &.terminal {
       grid-area: terminal;
-      background: url("../assets/img/icons/terminal.svg");
+      // background: url("../assets/img/icons/terminal.svg");
     }
 
     &.yo {
       grid-area: yo;
-      background: url("../assets/img/icons/yeoman.svg");
+      // background: url("../assets/img/icons/yeoman.svg");
     }
 
     &.html5 {
       grid-area: html5;
-      background: url("../assets/img/icons/html5.svg");
+      // background: url("../assets/img/icons/html5.svg");
     }
 
     &.sublime_text {
       grid-area: sublime_text;
-      background: url("../assets/img/icons/sublime.svg");
+      // background: url("../assets/img/icons/sublime.svg");
     }
 
     &.javascript {
       grid-area: javascript;
-      background: url("../assets/img/icons/javascript.svg");
+      // background: url("../assets/img/icons/javascript.svg");
     }
 
     &.css3 {
       grid-area: css3;
-      background: url("../assets/img/icons/css.svg");
+      // background: url("../assets/img/icons/css.svg");
     }
 
     &.sass {
       grid-area: sass;
-      background: url("../assets/img/icons/sass.svg");
+      // background: url("../assets/img/icons/sass.svg");
     }
 
     &.axure {
       grid-area: axure;
-      background: url("../assets/img/icons/axure.svg");
+      // background: url("../assets/img/icons/axure.svg");
     }
 
     &.cs {
       grid-area: cs;
-      background: url("../assets/img/icons/cs.svg");
+      // background: url("../assets/img/icons/cs.svg");
     }
 
     &.compass {
       grid-area: compass;
-      background: url("../assets/img/icons/compass.svg");
+      // background: url("../assets/img/icons/compass.svg");
     }
 
     &.ruby {
       grid-area: ruby;
-      background: url("../assets/img/icons/ruby.svg");
+      // background: url("../assets/img/icons/ruby.svg");
     }
 
     &.meteor {
       grid-area: meteor;
-      background: url("../assets/img/icons/meteor.svg");
+      // background: url("../assets/img/icons/meteor.svg");
     }
 
     &.react {
       grid-area: react;
-      background: url("../assets/img/icons/react.svg");
+      // background: url("../assets/img/icons/react.svg");
     }
 
     &.angular {
       grid-area: angular;
-      background: url("../assets/img/icons/angular.svg");
+      // background: url("../assets/img/icons/angular.svg");
     }
 
     &.svg {
       grid-area: svg;
-      background: url("../assets/img/icons/svg.svg");
+      // background: url("../assets/img/icons/svg.svg");
     }
 
     &.cs_icons {
       grid-area: cs_icons;
-      background: url("../assets/img/icons/cs_icons.svg");
+      // background: url("../assets/img/icons/cs_icons.svg");
     }
 
     &.sketch {
       grid-area: sketch;
-      background: url("../assets/img/icons/sketch.svg");
+      // background: url("../assets/img/icons/sketch.svg");
     }
 
     &.vue {
       grid-area: vue;
-      background: url("../assets/img/icons/vue.svg");
+      // background: url("../assets/img/icons/vue.svg");
     }
 
     &.npm {
       grid-area: npm;
-      background: url("../assets/img/icons/npm.svg");
+      // background: url("../assets/img/icons/npm.svg");
     }
 
     &.webpack {
       grid-area: webpack;
-      background: url("../assets/img/icons/webpack.svg");
+      // background: url("../assets/img/icons/webpack.svg");
     }
   }
 
