@@ -5,7 +5,6 @@
 
       <section class="sectionOne">
         <HeadAndCopy/>
-
         <Skills/>
       </section>
 
