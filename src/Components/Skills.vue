@@ -9,7 +9,7 @@
     <iconVue class="vue" />
     <iconSvg class="svg" />
     <iconTerminal class="terminal" />
-    <iconNpm class="npm" />
+    <iconNode class="node" />
     <iconWebpack class="webpack" />
     <iconAxure class="axure" />
   </div>
@@ -25,7 +25,7 @@
   import iconVue from '@/Components/Icons/Icon-vue'
   import iconSvg from '@/Components/Icons/Icon-svg'
   import iconTerminal from '@/Components/Icons/Icon-terminal'
-  import iconNpm from '@/Components/Icons/Icon-npm'
+  import iconNode from '@/Components/Icons/Icon-node'
   import iconWebpack from '@/Components/Icons/Icon-webpack'
   import iconAxure from '@/Components/Icons/Icon-axure'
   export default {
@@ -39,7 +39,7 @@
       iconVue,
       iconSvg,
       iconTerminal,
-      iconNpm,
+      iconNode,
       iconWebpack,
       iconAxure
     }
@@ -57,7 +57,7 @@
     grid-template-areas:
       'uiux      html5  css3     javascript'
       'sketch    sass   vue      svg'
-      'terminal  npm    webpack  axure';
+      'terminal  node    webpack  axure';
     // grid-auto-flow: row dense;
     justify-items: center;
     align-items: stretch;
@@ -79,7 +79,7 @@
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure'  !important;
+        'vue   svg    terminal  node         webpack  axure'  !important;
       grid-gap: 0em 0em;
       // background: red;
     }
@@ -110,7 +110,7 @@
         'css3     sketch'
         'sass     javascript'
         'vue      svg'
-        'terminal npm'
+        'terminal node'
         'webpack  axure';
         grid-gap: 0em 0em;
         // background: blue;
@@ -130,7 +130,7 @@
         'css3     sketch'
         'sass     javascript'
         'vue      svg'
-        'terminal npm'
+        'terminal node'
         'webpack  axure';
       grid-gap: 0em 0em;
       justify-items: center;
@@ -150,7 +150,7 @@
         'uiux   html5   css3'
         'sketch sass    javascript'
         'vue    svg     terminal'
-        'npm    webpack axure';
+        'node    webpack axure';
       grid-gap: 0em 0em;
       justify-items: center;
       align-items: center;
@@ -180,7 +180,7 @@
         'uiux   html5   css3'
         'sketch sass    javascript'
         'vue    svg     terminal'
-        'npm    webpack axure';
+        'node    webpack axure';
       grid-gap: .5em 0em;
     }
 
@@ -198,7 +198,7 @@
       //   'uiux   html5   css3'
       //   'sketch sass    javascript'
       //   'vue    svg     terminal'
-      //   'npm    webpack axure';
+      //   'node    webpack axure';
       // grid-gap: 1em 0em;
       // background: magenta;
     }
@@ -216,7 +216,7 @@
       // grid-template-areas:
       //   'uiux      html5  css3     javascript'
       //   'sketch    sass   vue      svg'
-      //   'terminal  npm    webpack  axure';
+      //   'terminal  node    webpack  axure';
       // grid-gap: 1em 0em;
       // background: magenta;
     }
@@ -236,7 +236,7 @@
         'uiux   html5   css3'
         'sketch sass    javascript'
         'vue    svg     terminal'
-        'npm    webpack axure';
+        'node    webpack axure';
       grid-gap: 1em 0em;
       // background: magenta;
     }
@@ -254,7 +254,7 @@
       grid-template-areas:
         'uiux      html5  css3     javascript'
         'sketch    sass   vue      svg'
-        'terminal  npm    webpack  axure';
+        'terminal  node    webpack  axure';
       grid-gap: 1em 0em;
       // background: magenta;
     }
@@ -274,7 +274,7 @@
         'uiux   html5   css3'
         'sketch sass    javascript'
         'vue    svg     terminal'
-        'npm    webpack axure';
+        'node    webpack axure';
       grid-gap: 0em 0em;
     }
 
@@ -300,7 +300,7 @@
       grid-template-columns: repeat(6, 1fr)  !important;
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure'  !important;
+        'vue   svg    terminal  node         webpack  axure'  !important;
       grid-gap: 0em 0em;
       // background: red !important;
     }
@@ -320,7 +320,7 @@
       grid-template-areas:
         'uiux      html5  css3     javascript'
         'sketch    sass   vue      svg'
-        'terminal  npm    webpack  axure' !important;
+        'terminal  node    webpack  axure' !important;
       grid-gap: 0em 0em;
     }
 
@@ -346,7 +346,7 @@
       grid-template-columns: repeat(6, 1fr) !important;
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure' !important;
+        'vue   svg    terminal  node         webpack  axure' !important;
       grid-gap: 0em 0em;
       // background: red !important;
     }
@@ -363,7 +363,7 @@
       grid-template-areas:
         'uiux      html5  css3     javascript'
         'sketch    sass   vue      svg'
-        'terminal  npm    webpack  axure' !important;
+        'terminal  node    webpack  axure' !important;
       grid-gap: 0em 0em;
     }
 
@@ -389,7 +389,7 @@
       grid-template-columns: repeat(6, 1fr) !important;
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure' !important;
+        'vue   svg    terminal  node         webpack  axure' !important;
       grid-gap: 0em 0em;
     }
 
@@ -408,7 +408,7 @@
         'uiux   html5   css3'
         'sketch sass    javascript'
         'vue    svg     terminal'
-        'npm    webpack axure';
+        'node    webpack axure';
       grid-gap: 1em 0em;
       // background: magenta;
 
@@ -448,7 +448,7 @@
       grid-template-areas:
         'uiux      html5  css3     javascript'
         'sketch    sass   vue      svg'
-        'terminal  npm    webpack  axure';
+        'terminal  node    webpack  axure';
       grid-gap: 0em 0em;
     }
 
@@ -486,7 +486,7 @@
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure';
+        'vue   svg    terminal  node         webpack  axure';
       grid-gap: 0em 0em;
     }
 
@@ -503,7 +503,7 @@
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
         'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  npm         webpack  axure';
+        'vue   svg    terminal  node         webpack  axure';
       grid-gap: 0em 0em;
     }
 
@@ -1108,14 +1108,14 @@
       // background: url("../assets/img/icons/sketch.svg");
     }
 
+    &.sketch {
+      grid-area: node;
+      // background: url("../assets/img/icons/sketch.svg");
+    }
+
     &.vue {
       grid-area: vue;
       // background: url("../assets/img/icons/vue.svg");
-    }
-
-    &.npm {
-      grid-area: npm;
-      // background: url("../assets/img/icons/npm.svg");
     }
 
     &.webpack {

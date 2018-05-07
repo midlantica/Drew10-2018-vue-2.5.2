@@ -1,5 +1,6 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg">
+    <title>JavaScript</title>
     <g fill="none" transform="translate(-436 -10)">
     <path fill="#000000" fill-opacity=".1" d="M479.743,61.825 C501.14,61.825 518.486,56.715 518.486,50.413 C518.486,44.11 501.14,39 479.743,39 C458.346,39 441,44.11 441,50.413 C441,56.716 458.346,61.825 479.743,61.825 Z" filter="url(#a)"/>
       <g transform="translate(462 19)">

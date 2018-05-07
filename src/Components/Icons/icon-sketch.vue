@@ -1,22 +1,23 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 60">
-  <defs>
-    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-    </filter>
-  </defs>
-  <g fill="none" fill-rule="evenodd" transform="translate(5 8)">
-    <path fill="#000000" fill-opacity=".1" fill-rule="nonzero" d="M38.743,43.825 C60.14,43.825 77.486,38.715 77.486,32.413 C77.486,26.11 60.14,21 38.743,21 C17.346,21 0,26.11 0,32.413 C0,38.716 17.346,43.825 38.743,43.825 Z" filter="url(#a)"/>
-    <g transform="translate(17)">
-      <polygon fill="#FFAE00" points="22 37.8 .989 13.647 10.097 1.268 22 0 33.903 1.268 43.011 13.647"/>
-      <polygon fill="#EC6C00" points="22 37.8 1 13.65 43 13.65"/>
-      <polygon fill="#FFAE00" points="22 37.8 9.4 13.65 34.6 13.65"/>
-      <polygon fill="#FFEFB4" points="22 0 9.4 13.65 34.6 13.65"/>
-      <polygon fill="#FED305" points="10 1.28 9.4 13.65 22 0"/>
-      <polygon fill="#FED305" points="34 1.28 34.6 13.65 22 0"/>
+    <title>Sketch</title>
+    <defs>
+      <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
+      </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(5 8)">
+      <path fill="#000000" fill-opacity=".1" fill-rule="nonzero" d="M38.743,43.825 C60.14,43.825 77.486,38.715 77.486,32.413 C77.486,26.11 60.14,21 38.743,21 C17.346,21 0,26.11 0,32.413 C0,38.716 17.346,43.825 38.743,43.825 Z" filter="url(#a)"/>
+      <g transform="translate(17)">
+        <polygon fill="#FFAE00" points="22 37.8 .989 13.647 10.097 1.268 22 0 33.903 1.268 43.011 13.647"/>
+        <polygon fill="#EC6C00" points="22 37.8 1 13.65 43 13.65"/>
+        <polygon fill="#FFAE00" points="22 37.8 9.4 13.65 34.6 13.65"/>
+        <polygon fill="#FFEFB4" points="22 0 9.4 13.65 34.6 13.65"/>
+        <polygon fill="#FED305" points="10 1.28 9.4 13.65 22 0"/>
+        <polygon fill="#FED305" points="34 1.28 34.6 13.65 22 0"/>
+      </g>
     </g>
-  </g>
-</svg>
+  </svg>
 </template>
 
 <script>
