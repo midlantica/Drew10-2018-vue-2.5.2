@@ -3,20 +3,10 @@
     <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
     <title>html5</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-31.9%" y="-15.9%" width="163.9%" height="156.1%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-155.000000, -10.000000)" fill-rule="nonzero">
-            <g id="Group-9" filter="url(#filter-1)" transform="translate(181.000000, 18.500000)">
+            <g id="Group-9" transform="translate(181.000000, 18.500000)">
                 <path d="M1.85993709,0.846 L34.4739548,0.846 C35.0262395,0.846 35.4739548,1.29371525 35.4739548,1.846 C35.4739548,1.87562168 35.4726386,1.90522874 35.4700102,1.93473358 L32.4584179,35.7405697 C32.4214666,36.1553563 32.1313359,36.5038267 31.730111,36.615325 L18.4148936,40.3155538 C18.2396223,40.3642607 18.0543849,40.3642348 17.8791272,40.3154789 L4.60070813,36.6214755 C4.19957827,36.5098828 3.90956643,36.1614213 3.87266192,35.7466971 L0.863872954,1.93463543 C0.814920955,1.3845244 1.22119062,0.898887864 1.77130165,0.849935866 C1.80077402,0.847313247 1.83034826,0.846 1.85993709,0.846 Z" id="Shape" fill="#D3492B"></path>
                 <polyline id="Shape" fill="#E15E30" points="18.167 37.363 29.682 34.163 32.392 3.757 18.167 3.757 18.167 37.363"></polyline>
                 <path d="M12.402,16.956 L12.004,12.486 L18.167,12.486 L18.167,8.122 L7.243,8.122 L8.418,21.322 L18.168,21.322 L18.168,16.956 L12.4,16.956 L12.402,16.956 Z M18.167,28.292 L18.147,28.297 L13.297,26.985 L12.987,23.505 L8.613,23.505 L9.223,30.357 L18.147,32.839 L18.167,32.832 L18.167,28.292 Z" id="Shape" fill="#ECECE9"></path>

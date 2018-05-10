@@ -3,20 +3,10 @@
     <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
     <title>svg</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-27.4%" y="-15.5%" width="154.8%" height="154.8%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-436.000000, -103.000000)" fill-rule="nonzero">
-            <g id="svg" filter="url(#filter-1)" transform="translate(459.000000, 111.000000)">
+            <g id="svg" transform="translate(459.000000, 111.000000)">
                 <path d="M21.035,0.4 C23.979,0.4 26.541,2.08 27.798,4.544 C30.416,3.72 33.384,4.352 35.448,6.416 C37.508,8.476 38.142,11.442 37.321,14.056 C39.783,15.322 41.454,17.899 41.454,20.88 L41.454,37.953 C41.454,40.118 39.696,41.873 37.531,41.873 L4.583,41.873 C2.417,41.873 0.66,40.118 0.66,37.953 L0.66,20.816 C0.66,17.88 2.33,15.324 4.78,14.062 C3.957,11.446 4.59,8.479 6.653,6.416 C8.709,4.359 11.665,3.724 14.277,4.536 C15.535,2.076 18.095,0.399 21.035,0.399 L21.035,0.4 Z M4.79,14.056 L4.78,14.061 L4.785,14.075 L4.789,14.065 L4.794,14.055 L4.79,14.055 L4.79,14.056 Z M37.314,14.054 L37.319,14.064 L37.319,14.056 L37.315,14.054 L37.313,14.054 L37.314,14.054 Z" id="Shape" fill="#FF9900"></path>
                 <path d="M2.817,20.812 L2.817,36.714 C2.817,38.37 4.161,39.716 5.817,39.716 L36.295,39.716 C37.955,39.716 39.295,38.372 39.295,36.714 L39.295,20.86 C39.295,17.905 37.01,15.53 34.138,15.39 C36.04,13.258 35.968,9.987 33.922,7.94 C31.872,5.89 28.59,5.823 26.459,7.738 C26.329,4.854 23.949,2.556 21.034,2.556 C18.127,2.556 15.754,4.841 15.612,7.713 C13.48,5.823 10.218,5.9 8.177,7.941 C6.131,9.988 6.06,13.261 7.962,15.391 C5.095,15.539 2.816,17.911 2.816,20.813 L2.817,20.812 Z" id="Shape" fill="#2F2F2F"></path>
                 <path d="M37.586,32.13 L37.586,24.513 C37.586,23.538 36.796,22.747 35.82,22.747 L6.293,22.747 C5.316,22.747 4.528,23.537 4.528,24.513 L4.528,28.838 C8.495,29.025 14.611,29.378 20.95,29.984 C26.802,30.544 33.072,31.434 37.586,32.129 L37.586,32.13 Z" id="Shape" fill="#5F5F5F"></path>

@@ -3,20 +3,10 @@
     <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
     <title>webpack</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-27.4%" y="-13.8%" width="154.8%" height="148.9%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-296.000000, -193.000000)">
-            <g id="Group-16" filter="url(#filter-1)" transform="translate(319.000000, 198.500000)">
+            <g id="Group-16" transform="translate(319.000000, 198.500000)">
                 <polygon id="border" fill="#FFFFFF" points="20.4303923 0.0127603585 40.7770803 11.5230356 40.7770803 34.543586 20.4303923 46.0538612 0.0837044151 34.543586 0.0837044151 11.5230356"></polygon>
                 <g id="cube" transform="translate(0.017433, 0.407493)">
                     <g>

@@ -1,29 +1,14 @@
 <template>
-  <svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <title>JavaScript</title>
-      <defs>
-          <filter x="-32.9%" y="-16.2%" width="165.7%" height="157.5%" filterUnits="objectBoundingBox" id="filter-1">
-              <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-              <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-              <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-              <feMerge>
-                  <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                  <feMergeNode in="SourceGraphic"></feMergeNode>
-              </feMerge>
-          </filter>
-      </defs>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Artboard-Copy" transform="translate(-436.000000, -10.000000)" fill-rule="nonzero">
-              <g id="Group-11" filter="url(#filter-1)" transform="translate(462.500000, 19.000000)">
-                  <path d="M1.15012255,0.062 L33.7637691,0.062 C34.3160538,0.062 34.7637691,0.50971525 34.7637691,1.062 C34.7637691,1.09167812 34.7624479,1.12134152 34.7598094,1.15090213 L31.7485663,34.8882247 C31.7115291,35.3031808 31.4211141,35.6517017 31.0196465,35.7629857 L17.7042649,39.453916 C17.5293888,39.5023905 17.3446183,39.5023648 17.1697557,39.4538417 L3.89117416,35.7691358 C3.48980082,35.6577577 3.19950395,35.3092452 3.16251362,34.8943508 L0.154073407,1.15080377 C0.105028437,0.600701023 0.511216024,0.114995829 1.06131877,0.0659508597 C1.09084684,0.0633182553 1.12047736,0.062 1.15012255,0.062 Z" id="Shape" fill="#D5BA31"></path>
-                  <polygon id="Shape" fill="#FFDA3E" points="28.972 33.317 31.682 2.967 17.457 2.967 17.457 36.509 28.972 33.316"></polygon>
-                  <polyline id="Shape" fill="#ECECE9" points="17.457 27.455 17.437 27.46 12.587 26.15 12.277 22.676 7.9 22.676 8.51 29.516 17.435 31.994 17.455 31.988 17.455 27.455"></polyline>
-                  <polygon id="Shape" fill="#FFFFFF" points="23.67 10.29 22.3 26.15 17.442 27.46 17.442 31.993 26.372 29.519 28.372 7.359 23.669 10.294"></polygon>
-                  <polygon id="Shape" fill="#FFFFFF" points="17.417 11.644 27.969 11.66 28.055 10.68 28.255 8.473 28.358 7.303 17.416 7.303 17.416 11.643"></polygon>
-                  <polygon id="Shape" fill="#EBEBE9" points="6.992 11.627 6.592 7.304 17.457 7.304 17.457 11.644 6.992 11.627"></polygon>
-              </g>
-          </g>
-      </g>
+  <svg height="60" width="88" xmlns="http://www.w3.org/2000/svg">
+    <title>JavaScript</title>
+    <g fill="none">
+      <path d="M27.65 9.062h32.614a1 1 0 0 1 .996 1.089l-3.011 33.737a1 1 0 0 1-.73.875l-13.315 3.69a1 1 0 0 1-.534 0L30.39 44.77a1 1 0 0 1-.728-.875l-3.009-33.743a1 1 0 0 1 .996-1.089z" fill="#d5ba31"/>
+      <path d="M55.472 42.317l2.71-30.35H43.957v33.542l11.515-3.193z" fill="#ffda3e"/>
+      <path d="M43.957 36.455l-.02.005-4.85-1.31-.31-3.474H34.4l.61 6.84 8.925 2.478.02-.006v-4.533" fill="#ecece9"/>
+      <path d="M50.17 19.29L48.8 35.15l-4.858 1.31v4.533l8.93-2.474 2-22.16-4.703 2.935z" fill="#fff"/>
+      <path d="M43.917 20.644l10.552.016.086-.98.2-2.207.103-1.17H43.916v4.34z" fill="#fff"/>
+      <path d="M33.492 20.627l-.4-4.323h10.865v4.34z" fill="#ebebe9"/>
+    </g>
   </svg>
 </template>
 
