@@ -1,16 +1,27 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-    <title>Vue.js</title>
-    <defs>
-      <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-      </filter>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-      <path fill="#000" fill-opacity=".1" fill-rule="nonzero" d="M38.743 42.825c21.397 0 38.743-5.11 38.743-11.412C77.486 25.11 60.14 20 38.743 20 17.346 20 0 25.11 0 31.413s17.346 11.412 38.743 11.412z" filter="url(#a)" transform="translate(5 9)"/>
-      <path fill="#40B883" d="M30.123 9H22l21 37L64 9h-8.402L42.86 31.443"/>
-      <path fill="#34495E" d="M37.983 9H30l12.85 23L56 9h-7.737l-5.14 9.094"/>
-    </g>
+  <svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>Vue.js</title>
+      <defs>
+          <filter x="-27.4%" y="-17.6%" width="154.8%" height="162.2%" filterUnits="objectBoundingBox" id="filter-1">
+              <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+              <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+              <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+          </filter>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Artboard-Copy" transform="translate(-296.000000, -103.000000)">
+              <g id="Vue" filter="url(#filter-1)" transform="translate(319.000000, 113.500000)">
+                  <g id="Group-2">
+                      <polygon id="Combined-Shape" fill="#40B883" points="8.12285911 0 0 0 21 37 42 0 33.5982689 0 20.860564 22.442623"></polygon>
+                      <polygon id="Combined-Shape" fill="#34495E" points="15.9830835 0 8 0 20.8505518 23 34 0 26.2628598 0 21.1229717 9.09427772"></polygon>
+                  </g>
+              </g>
+          </g>
+      </g>
   </svg>
 </template>
 

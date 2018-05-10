@@ -1,61 +1,61 @@
-html {
-  // box-sizing: border-box;
+// html {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   background: #333;
+//   margin: 0;
+//   //
+  // @media (min-width: 760px) {
+  //   margin: 0;
+  // }
 }
 
-body {
-  background: #333;
-  margin: 0;
-  //
-  @media (min-width: 760px) {
-    margin: 0;
-  }
-}
+// .grid {
+//   display: grid; // <-- CONTAINER GRID
+//   grid-template-columns: repeat(1, 1fr);
+//   grid-template-areas:
+//     'header'
+//     'innerGrid' // See _innerGrid.scss
+//     'footer';
+//   // width: calc(100%);
+//   width: $LargeScreen;
+//   max-width: $XLargeScreen;
+//   margin: 0 auto;
+//   @include shadow;
+//   @include clearfix;
+//   background: url(./assets/img/bg/graphy_2.png) repeat;
+//   box-shadow: 3px 5px 4px transparentize(black, 0.8),
+//               3px 3px 5px transparentize(black, 0.2);
 
-.container {
-  display: grid; // <-- CONTAINER GRID
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas:
-    'header'
-    'innerGrid' // See _innerGrid.scss
-    'footer';
-  // width: calc(100%);
-  width: $LargeScreen;
-  max-width: $XLargeScreen;
-  margin: 0 auto;
-  @include shadow;
-  @include clearfix;
-  background: url(./assets/img/bg/graphy_2.png) repeat;
-  box-shadow: 3px 5px 4px transparentize(black, 0.8),
-              3px 3px 5px transparentize(black, 0.2);
+  // @media (max-width: $LargeScreen) {
+  //   width: 100%;
+  //   width: fit-content;
+  // }
 
-  @media (max-width: $LargeScreen) {
-    width: 100%;
-    width: fit-content;
-  }
+  // @media (max-width: $XSmallScreen) {
+  //   width: 100%;
+  //   width: fit-content;
+  // }
 
-  @media (max-width: $XSmallScreen) {
-    width: 100%;
-    width: fit-content;
-  }
+// }
 
-}
+// header {
+//   grid-area: header; // For Extras Page
+// }
 
-header {
-  grid-area: header; // For Extras Page
-}
+// footer {
+//   grid-area: footer;
+// }
 
-footer {
-  grid-area: footer;
-}
+// .sectionOne {
+//   grid-area: sectionOne;
+// }
 
-.sectionOne {
-  grid-area: sectionOne;
-}
+// .sectionTwo {
+//   grid-area: sectionTwo;
+// }
 
-.sectionTwo {
-  grid-area: sectionTwo;
-}
-
-.innerGrid {  // See _innerGrid.scss
-  grid-area: innerGrid;
-}
+// .innerGrid {  // See _innerGrid.scss
+//   grid-area: innerGrid;
+// }

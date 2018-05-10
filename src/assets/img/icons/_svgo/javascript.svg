@@ -1,16 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-  <defs>
-    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-    </filter>
-  </defs>
-  <g fill="none" transform="translate(5 7)">
-    <path fill="#000000" fill-opacity=".1" d="M38.743,44.825 C60.14,44.825 77.486,39.715 77.486,33.413 C77.486,27.11 60.14,22 38.743,22 C17.346,22 0,27.11 0,33.413 C0,39.716 17.346,44.825 38.743,44.825 Z" filter="url(#a)"/>
-    <polyline fill="#D5BA31" points="24.224 35.584 21.057 .062 55.857 .062 52.687 35.578 38.437 39.528 24.224 35.584"/>
-    <polygon fill="#FFDA3E" points="49.972 33.317 52.682 2.967 38.457 2.967 38.457 36.509 49.972 33.316"/>
-    <polyline fill="#ECECE9" points="38.457 27.455 38.437 27.46 33.587 26.15 33.277 22.676 28.9 22.676 29.51 29.516 38.435 31.994 38.455 31.988 38.455 27.455"/>
-    <polygon fill="#FFFFFF" points="44.67 10.29 43.3 26.15 38.442 27.46 38.442 31.993 47.372 29.519 49.372 7.359 44.669 10.294"/>
-    <polygon fill="#FFFFFF" points="38.417 11.644 48.969 11.66 49.055 10.68 49.255 8.473 49.358 7.303 38.416 7.303 38.416 11.643"/>
-    <polygon fill="#EBEBE9" points="27.992 11.627 27.592 7.304 38.457 7.304 38.457 11.644 27.992 11.627"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>javascript</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-32.9%" y="-16.2%" width="165.7%" height="157.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-436.000000, -10.000000)" fill-rule="nonzero">
+            <g id="Group-11" filter="url(#filter-1)" transform="translate(462.500000, 19.000000)">
+                <path d="M1.15012255,0.062 L33.7637691,0.062 C34.3160538,0.062 34.7637691,0.50971525 34.7637691,1.062 C34.7637691,1.09167812 34.7624479,1.12134152 34.7598094,1.15090213 L31.7485663,34.8882247 C31.7115291,35.3031808 31.4211141,35.6517017 31.0196465,35.7629857 L17.7042649,39.453916 C17.5293888,39.5023905 17.3446183,39.5023648 17.1697557,39.4538417 L3.89117416,35.7691358 C3.48980082,35.6577577 3.19950395,35.3092452 3.16251362,34.8943508 L0.154073407,1.15080377 C0.105028437,0.600701023 0.511216024,0.114995829 1.06131877,0.0659508597 C1.09084684,0.0633182553 1.12047736,0.062 1.15012255,0.062 Z" id="Shape" fill="#D5BA31"></path>
+                <polygon id="Shape" fill="#FFDA3E" points="28.972 33.317 31.682 2.967 17.457 2.967 17.457 36.509 28.972 33.316"></polygon>
+                <polyline id="Shape" fill="#ECECE9" points="17.457 27.455 17.437 27.46 12.587 26.15 12.277 22.676 7.9 22.676 8.51 29.516 17.435 31.994 17.455 31.988 17.455 27.455"></polyline>
+                <polygon id="Shape" fill="#FFFFFF" points="23.67 10.29 22.3 26.15 17.442 27.46 17.442 31.993 26.372 29.519 28.372 7.359 23.669 10.294"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="17.417 11.644 27.969 11.66 28.055 10.68 28.255 8.473 28.358 7.303 17.416 7.303 17.416 11.643"></polygon>
+                <polygon id="Shape" fill="#EBEBE9" points="6.992 11.627 6.592 7.304 17.457 7.304 17.457 11.644 6.992 11.627"></polygon>
+            </g>
+        </g>
+    </g>
 </svg>

@@ -1,41 +1,28 @@
-.innerGrid .contentGrid {
-  display: grid;  // <-- CONTENT GRID
-  margin-top: .75em;
-  margin-bottom: .5em;
-  // width: 100%;
+// .content {
+//   display: grid;  // <-- CONTENT GRID
+//   grid-template-columns: repeat(2, 1fr);
+//   margin-top: .75em;
+//   margin-bottom: .5em;
 
-  @media (min-width: 1040px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      'headDiv     headDiv'
-      'sectionOne  sectionTwo'
-  }
+//   @media (max-width: 800px) {
+//     grid-template-columns: 1fr;
+//   }
 
-  @media (max-width: 1040px) {
-    // margin: 0;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-      'headDiv'
-      'sectionOne'
-      'sectionTwo';
-  }
+//   &:nth-child(1) {
+//     padding-right: .5em;
+//     padding-left: 1em;
 
-  .sectionOne {
-    padding-right: .5em;
-    padding-left: 1em;
-    @media screen and (max-width: 1040px) {
-      // padding: 0;
-      // padding-bottom: 1em;
-      // padding-right: .5em;
-      // padding-left: 1.3em;
-    }
-  }
-  .sectionTwo {
-    padding-left: .5em;
-    padding-right: 1.3em;
-    @media screen and (max-width: 1040px) {
-      padding: 0 1em;
-    }
-  }
+//     @media screen and (max-width: 1040px) {
+//       //
+//     }
+//   }
+//   &:nth-child(2) {
+//     padding-left: .5em;
+//     padding-right: 1.3em;
 
-}
+//     @media screen and (max-width: 1040px) {
+//       padding: 0 1em;
+//     }
+//   }
+
+// }

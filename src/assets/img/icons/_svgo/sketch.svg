@@ -1,18 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-  <defs>
-    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-    </filter>
-  </defs>
-  <g fill="none" fill-rule="evenodd" transform="translate(5 8)">
-    <path fill="#000000" fill-opacity=".1" fill-rule="nonzero" d="M38.743,43.825 C60.14,43.825 77.486,38.715 77.486,32.413 C77.486,26.11 60.14,21 38.743,21 C17.346,21 0,26.11 0,32.413 C0,38.716 17.346,43.825 38.743,43.825 Z" filter="url(#a)"/>
-    <g transform="translate(17)">
-      <polygon fill="#FFAE00" points="22 0 43.011 24.153 33.902 36.532 22 37.8 10.097 36.532 .989 24.153" transform="rotate(-180 22 18.9)"/>
-      <polygon fill="#EC6C00" points="22 13.65 43 37.8 1 37.8" transform="rotate(-180 22 25.725)"/>
-      <polygon fill="#FFAE00" points="22 13.65 34.6 37.8 9.4 37.8" transform="rotate(-180 22 25.725)"/>
-      <polygon fill="#FFEFB4" points="22 13.65 34.6 0 9.4 0" transform="rotate(-180 22 6.825)"/>
-      <polygon fill="#FED305" points="21.4 12.37 22 0 9.4 13.65" transform="rotate(-180 15.7 6.825)"/>
-      <polygon fill="#FED305" points="34 12.37 34.6 0 22 13.65" transform="matrix(1 0 0 -1 0 13.65)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-26.1%" y="-17.1%" width="152.3%" height="160.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-15.000000, -103.000000)">
+            <g id="Sketch" filter="url(#filter-1)" transform="translate(37.000000, 113.000000)">
+                <g id="Group-8">
+                    <polygon id="Polygon" fill="#FFAE00" points="22 37.8 0.988962058 13.6474326 10.097166 1.26845638 22 0 33.902834 1.26845638 43.0106278 13.6474326"></polygon>
+                    <polygon id="Polygon" fill="#EC6C00" points="22 37.8 1 13.65 43 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FFAE00" points="22 37.8 9.4 13.65 34.6 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FFEFB4" points="22 0 9.4 13.65 34.6 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FED305" points="10 1.2796875 9.4 13.65 22 2.95585778e-12"></polygon>
+                    <polygon id="Polygon" fill="#FED305" points="34 1.2796875 34.6 13.65 22 0"></polygon>
+                </g>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

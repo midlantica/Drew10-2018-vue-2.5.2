@@ -1,19 +1,31 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-    <title>Webpack</title>
-    <defs>
-      <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-      </filter>
-    </defs>
-    <g fill="none">
-      <path fill="#000" fill-opacity=".1" d="M38.743 22.825c21.397 0 38.743-5.11 38.743-11.412C77.486 5.11 60.14 0 38.743 0 17.346 0 0 5.11 0 11.413s17.346 11.412 38.743 11.412z" filter="url(#a)" transform="translate(5 30)"/>
-      <path fill="#8ED6FB" d="M63.23 38.684L44.79 49v-8.035l11.49-6.25 6.95 3.97zm.77-1.13V15.978l-6.58 3.852v13.868L64 37.554zm-39.23 1.13L43.21 49v-8.035l-11.49-6.25-6.95 3.97zm-.77-1.13V15.978l6.58 3.852v13.868L24 37.554zm.77-22.97L43.21 4v7.77l-11.813 6.59-.09.053-6.537-3.83zm38.46 0L44.79 4v7.77l11.813 6.59.09.053 6.537-3.83z"/>
-      <path fill="#1C78C0" d="M32 32.963V21l11 6.414V39l-11-6.037zm24 0V21l-11.044 6.498v11.66L56 32.962zM44 13.886l11 5.968L44 26l-11-6.146 11-5.968z"/>
-    </g>
+  <svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>Webpack</title>
+      <defs>
+          <filter x="-27.4%" y="-13.8%" width="154.8%" height="148.9%" filterUnits="objectBoundingBox" id="filter-1">
+              <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+              <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+              <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+          </filter>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Artboard-Copy" transform="translate(-296.000000, -193.000000)">
+              <g id="Group-16" filter="url(#filter-1)" transform="translate(319.000000, 198.500000)">
+                  <polygon id="border" fill="#FFFFFF" points="20.4303923 0.0127603585 40.7770803 11.5230356 40.7770803 34.543586 20.4303923 46.0538612 0.0837044151 34.543586 0.0837044151 11.5230356"></polygon>
+                  <g id="cube" transform="translate(0.017433, 0.407493)">
+                      <g>
+                          <path d="M39.4979922,34.8630089 L21.1802057,45.2255192 L21.1802057,37.1554196 L32.5955563,30.8778857 L39.4979922,34.8630089 Z M40.7517882,33.7294103 L34.0491914,29.8596643 L34.0491914,29.1275073 L34.0491914,15.9303252 L40.7517882,12.0605792 L40.7517882,33.7294103 Z M1.25379601,34.8630089 L8.15623185,30.8778857 L19.5715825,37.1554196 L19.5715825,45.2255192 L1.25379601,34.8630089 Z M-1.77388712e-14,33.7294103 L-3.00287636e-14,12.0605792 L6.70259674,15.9303252 L6.70259674,29.1275073 L6.70259674,29.8596643 L-1.63202785e-14,33.7294103 Z M0.78476453,10.6561851 L19.5715825,0.0283401296 L19.5715825,7.83037469 L7.53599427,14.4489899 L7.44283159,14.5002219 L0.78476453,10.6561851 Z M39.9670237,10.6561851 L33.3089566,14.5002219 L33.2157939,14.4489899 L21.1802057,7.83037469 L21.1802057,0.0283401296 L39.9670237,10.6561851 Z" id="outer-cube" fill="#8ED5FA"></path>
+                          <path d="M19.5715825,35.31981 L8.31121996,29.1275073 L8.31121996,16.8590643 L19.5715825,23.3602376 L19.5715825,35.31981 Z M21.1802057,35.31981 L21.1802057,23.3602376 L32.4405682,16.8590643 L32.4405682,29.1275073 L21.1802057,35.31981 Z M20.3774067,22.8949947 L20.3743814,22.8949947 L20.3758941,22.8923747 L20.3774067,22.8949947 Z M9.07119795,15.4403597 L20.3758941,9.22367694 L31.6805902,15.4403597 L20.3758941,21.967129 L9.07119795,15.4403597 Z" id="inner-cube" fill="#1C78C0"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
   </svg>
-
-
 </template>
 
 <script>
