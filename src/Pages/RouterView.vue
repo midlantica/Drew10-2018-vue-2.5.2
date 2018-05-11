@@ -37,7 +37,7 @@
 
   .grid {
     display: grid;
-    // COLUMNS
+    // COLUMNS ||  ||  ||
     grid-template-columns:
       minmax(0, 1fr)
       repeat(1, minmax(auto, 1024px))
@@ -48,7 +48,10 @@
     > main {
       display: grid;
       // ROWS
-      grid-template-rows: 1fr auto 1fr;
+      grid-template-rows:
+        1fr
+        auto
+        1fr;
       background: white; // ivory
       @include shadow;
 

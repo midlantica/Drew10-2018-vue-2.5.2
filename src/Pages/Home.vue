@@ -55,16 +55,14 @@
     > section {
       //
       &:nth-child(1) {
-        padding-right: 0.7em;
-        padding-left: 1.3em;
+        padding: 0 1em;
 
         @media screen and (max-width: 1024px) {
           //
         }
       }
       &:nth-child(2) {
-        padding-left: .5em;
-        padding-right: 1.3em;
+        padding: 0 1em;
 
         @media screen and (max-width: 1024px) {
           // padding: 0 1em;

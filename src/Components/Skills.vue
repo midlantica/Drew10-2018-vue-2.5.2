@@ -4,10 +4,12 @@
     <iconHtml5 class="icon html5" />
     <iconCss3 class="icon css3" />
     <iconJs class="icon js" />
+
     <iconSketch class="icon sketch" />
     <iconSass class="icon sass" />
     <iconVue class="icon vue" />
     <iconSvg class="icon svg" />
+
     <iconTerminal class="icon terminal" />
     <iconNode class="icon node" />
     <iconWebpack class="icon webpack" />
@@ -60,26 +62,82 @@
     // background: beige;
     // width: 100%;
 
-    @media (max-width: 1024px) and (min-width: 710px) {
-      grid-template-columns: repeat(6, minmax(auto, 130px));
-      justify-content: space-between;
-      // background: orange;
-    }
-
-    // @media (max-width: 964px) {
-    //   grid-template-columns: repeat(4, minmax(auto, 130px));
+    // @media (min-width: 2000px) {
+    //   grid-template-columns: repeat(12, minmax(auto, 130px));
     // }
 
-    @media (max-width: 410px) {
+    @media (max-width: 1024px) and (min-width: 736px) {
+      grid-template-columns: repeat(6, minmax(auto, 130px));
+      justify-content: space-between;
+      grid-gap: 1.25em;
+      // width: 80%;
+      // background: lightblue;
+    }
+
+    // @media (min-device-width: 768px)
+    // and (max-device-width: 1024px)
+    // and (-webkit-min-device-pixel-ratio: 1) {
+    //   grid-template-columns: repeat(6, minmax(auto, 130px));
+    //   justify-content: space-between;
+    //   grid-gap: 1em;
+    //   width: 100%;
+    //   background: rgba(201, 222, 198, 0.75); // pale green
+    // }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      display: flex;
+      // width: 100%;
+      flex-wrap: wrap;
+      // background: rgba(201, 222, 198, 0.75); // pale green
+    }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1)
+    and (orientation : landscape) {
+      display: flex;
+      // width: 100%;
+      flex-wrap: wrap;
+      // background: rgba(201, 222, 198, 0.75); // pale green
+    }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      grid-template-columns: repeat(2, minmax(auto, 130px));
+      justify-content: space-between;
+      grid-gap: 1em;
+      grid-column-gap: 2em;
+      // width: 100%;
+      // background: rgba(246, 128, 97, .5); // pale orange
+      justify-content: center;
+    }
+
+
+    @media (min-width: 414px) and (max-width: 736) {
+      grid-template-columns: repeat(4, minmax(auto, 130px));
+      grid-gap: 1.5em;
+      // background: aqua;
+    }
+
+    @media (max-width: 414px) {
       grid-template-columns: repeat(3, minmax(auto, 130px));
+      grid-gap: 1.0em;
+      // background: yellow;
     }
 
     @media (max-width: 310px) {
       grid-template-columns: repeat(2, minmax(auto, 130px));
+      grid-gap: 0.75em;
+      // background: orange;
     }
 
     @media (max-width: 210px) {
       grid-template-columns: repeat(1, minmax(auto, 130px));
+      grid-gap: 0.5em;
+      // background: red;
     }
 
     .icon {
@@ -87,6 +145,26 @@
       // width: 88px;
       // height: 60px;
       // background: orange;
+      display: inline-block;
+      clear: left;
+      margin: .5em 0.65em 0;
+      text-align: center;
+      flex-grow: 1;
+
+      @media (min-device-width: 768px)
+      and (max-device-width: 1024px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        margin: .5em 2.3em 0;
+      }
+
+      @media (min-device-width: 768px)
+      and (max-device-width: 1024px)
+      and (-webkit-min-device-pixel-ratio: 1)
+      and (orientation : landscape) {
+        margin: .5em 2.2em 0;
+        text-align: center;
+        // background: rgba(201, 222, 198, 0.75); // pale green
+      }
 
       &.uiux {
         // grid-area: uiux;
