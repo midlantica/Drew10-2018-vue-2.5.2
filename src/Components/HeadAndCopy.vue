@@ -77,7 +77,7 @@
   p {
     font-size: 0.9rem;
     color: $grey;
-    margin: 1em .5em 1.2em;
+    margin: 1em 0em .5em .75em;
     line-height: 2.6em;
     letter-spacing: 0.06em;
   }

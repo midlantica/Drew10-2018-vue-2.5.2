@@ -23,16 +23,16 @@
 
 <style lang="scss">
   @import "./src/assets/css/_base.scss";
-  @import "./src/assets/css/_layout.scss";
-  @import "./src/assets/css/_innerGrid.scss";
+  // @import "./src/assets/css/_layout.scss";
+  // @import "./src/assets/css/_innerGrid.scss";
   @import "./src/assets/css/_styles.scss";
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    // text-align: center;
+    // color: #2c3e50;
+    // margin-top: 60px;
   }
 </style>

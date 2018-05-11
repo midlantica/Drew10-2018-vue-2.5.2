@@ -1,21 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-  <defs>
-    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-    </filter>
-    <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#D1D1D1"/>
-      <stop offset="100%" stop-color="#848484"/>
-    </linearGradient>
-  </defs>
-  <g fill="none" fill-rule="evenodd" transform="translate(5 7)">
-    <path fill="#000000" fill-opacity=".1" fill-rule="nonzero" d="M38.999,45.911 C60.396,45.911 77.742,40.801 77.742,34.499 C77.742,28.196 60.396,23.086 38.999,23.086 C17.602,23.086 0.256,28.196 0.256,34.499 C0.256,40.802 17.602,45.911 38.999,45.911 Z" filter="url(#a)"/>
-    <g transform="translate(17.321 .355)">
-      <rect width="43.344" height="36.522" fill="url(#b)" fill-rule="nonzero" rx="1"/>
-      <rect width="35.949" height="29.02" x="3.912" y="3.367" fill="#282828" fill-rule="nonzero" rx="1"/>
-      <path fill="#000000" fill-rule="nonzero" d="M39.8608038,11.1693218 L39.8608038,31.4705048 C39.8608038,31.9771166 39.4569828,32.3882798 38.9366044,32.3882798 L4.83667425,32.3882798 C4.32639135,32.3882798 3.91155705,31.9771166 3.91155705,31.4705048 L3.91155705,25.1029818 L39.8608038,11.1711573 L39.8608038,11.1693218 Z"/>
-      <polygon stroke="#717171" points="3.912 3.368 39.861 3.368 39.861 32.388 3.912 32.388"/>
+<svg width="88" height="60" xmlns="http://www.w3.org/2000/svg">
+  <title>Command Line</title>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(22.321 10.355)" fill-rule="nonzero">
+      <rect fill="#C7C7C7" width="43.344" height="36.522" rx="1"/>
+      <path fill="#282828" d="M3.912 3.367h35.949v29.02H3.912z"/>
     </g>
-    <polygon fill="#CAD8E9" fill-rule="nonzero" points="31.995 12.717 44.705 18.507 31.995 24.463 31.995 27.549 48.132 20.022 48.132 16.982 31.995 9.448 31.995 12.715"/>
+    <path stroke="#717171" d="M26.233 13.724h35.95v29.02h-35.95z"/>
+    <path fill="#FFA700" fill-rule="nonzero" d="M36.995 22.717l12.71 5.79-12.71 5.956v3.086l16.137-7.527v-3.04l-16.137-7.534v3.267z"/>
   </g>
 </svg>

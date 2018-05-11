@@ -3,20 +3,10 @@
     <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
     <title>css3</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-32.9%" y="-15.9%" width="165.7%" height="156.1%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-296.000000, -10.000000)" fill-rule="nonzero">
-            <g id="css" filter="url(#filter-1)" transform="translate(322.500000, 18.500000)">
+            <g id="css" transform="translate(322.500000, 18.500000)">
                 <g id="Group-10">
                     <path d="M1.1929065,0.846 L33.8069548,0.846 C34.3592395,0.846 34.8069548,1.29371525 34.8069548,1.846 C34.8069548,1.87562168 34.8056386,1.90522874 34.8030102,1.93473358 L31.7914203,35.740543 C31.7544678,36.1553428 31.4643202,36.5038207 31.0630785,36.615308 L17.7458869,40.3155661 C17.5706198,40.3642651 17.3853888,40.3642341 17.2101379,40.3154766 L3.93271168,36.6214896 C3.53158042,36.5098886 3.24157376,36.161417 3.2046805,35.7466882 L0.196839895,1.93460767 C0.147903232,1.38449527 0.554186437,0.898870058 1.10429883,0.849933395 C1.13376201,0.847312422 1.16332697,0.846 1.1929065,0.846 Z" id="Shape" fill="#0070BA"></path>
                     <polyline id="Shape" fill="#1B86C1" points="17.5 37.363 29.015 34.163 31.725 3.757 17.498 3.757 17.498 37.363"></polyline>

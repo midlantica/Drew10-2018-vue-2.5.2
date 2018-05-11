@@ -1,19 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
-  <defs>
-    <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-    </filter>
-  </defs>
-  <g fill="none" transform="translate(4 6)">
-    <path fill="#000000" fill-opacity=".1" d="M39.462,46.578 C60.859,46.578 78.205,41.468 78.205,35.166 C78.205,28.863 60.859,23.753 39.462,23.753 C18.065,23.753 0.719,28.863 0.719,35.166 C0.719,41.469 18.065,46.578 39.462,46.578 Z" filter="url(#a)"/>
-    <g transform="translate(19)">
-      <polygon fill="#94CA44" points=".414 .777 40.584 .777 40.584 9.052 .414 9.052"/>
-      <g transform="translate(0 12)">
-        <polygon fill="#049ADC" points=".44 .406 12.283 .406 12.283 27.97 .44 27.97"/>
-        <polygon fill="#F2208A" points="16.082 .406 40.385 .406 40.385 27.97 16.082 27.97"/>
-      </g>
-      <polygon fill="#32B1E2" points=".44 12.35 12.283 12.35 12.283 22.607 .44 25.39"/>
-      <polygon fill="#FC339C" points="16.082 12.35 40.272 12.35 40.272 16.092 16.082 22.365 16.082 12.35"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>axure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-28.0%" y="-16.2%" width="156.1%" height="157.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246376812 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M7.64326546,0.399993896 L7.64326546,39.609993 L4.39611447,39.609993 C2.18697547,39.609993 0.396114465,37.8190302 0.396114465,35.6097657 L0.396114465,4.4002212 C0.396114465,2.19095666 2.18697547,0.399993896 4.39611447,0.399993896 L7.64326546,0.399993896 Z M10.6823933,0.399993896 L36.6061135,0.399993896 C38.8152525,0.399993896 40.6061135,2.19095666 40.6061135,4.4002212 L40.6061135,35.6097657 C40.6061135,37.8190302 38.8152525,39.609993 36.6061135,39.609993 L10.6823933,39.609993 L10.6823933,0.399993896 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-436.000000, -193.000000)">
+            <g id="axure" transform="translate(459.000000, 202.000000)">
+                <g id="ax" filter="url(#filter-1)" transform="translate(0.500000, 0.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#D846FF" xlink:href="#path-2"></use>
+                    <path d="M22.3240394,36.1024989 C21.2679121,36.8848773 19.9834964,37.3437095 18.5981753,37.3437095 C14.9971339,37.3437095 12.077913,34.2433702 12.077913,30.4189078 C12.077913,26.5944454 14.9971339,23.4941061 18.5981753,23.4941061 C19.9834964,23.4941061 21.2679121,23.9529383 22.3240394,24.7353167 L22.3240394,23.4941061 L25.1184376,23.4941061 L25.1184376,37.3437095 L22.3240394,37.3437095 L22.3240394,36.1024989 Z M18.5981753,34.4587777 C20.698992,34.4587777 22.4020404,32.6500663 22.4020404,30.4189078 C22.4020404,28.1877492 20.698992,26.3790379 18.5981753,26.3790379 C16.4973586,26.3790379 14.7943102,28.1877492 14.7943102,30.4189078 C14.7943102,32.6500663 16.4973586,34.4587777 18.5981753,34.4587777 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                    <polygon id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-3)" points="35.7579813 23.5025767 39.0904281 23.5025767 34.2045041 30.4938445 39.0904281 37.312916 35.5142599 37.312916 32.4765906 32.9663157 29.4389214 37.312916 25.8627531 37.312916 30.7486771 30.4938445 25.8627531 23.5025767 29.1952 23.5025767 32.4765906 28.0822708"></polygon>
+                </g>
+                <rect id="Rectangle" fill="#FFFFFF" x="8.0638108" y="0.395000458" width="3.2610554" height="39.2099991"></rect>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

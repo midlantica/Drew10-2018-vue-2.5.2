@@ -1,21 +1,11 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="88" height="60" viewBox="0 0 88 60">
+  <svg height="60" width="88" xmlns="http://www.w3.org/2000/svg">
     <title>Axure</title>
-    <defs>
-      <filter id="a" width="122.1%" height="175.1%" x="-11.1%" y="-37.6%" filterUnits="objectBoundingBox">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="2.857"/>
-      </filter>
-    </defs>
-    <g fill="none" transform="translate(4 7)">
-      <path fill="#000000" fill-opacity=".1" d="M39.462,45.578 C60.859,45.578 78.205,40.468 78.205,34.166 C78.205,27.863 60.859,22.753 39.462,22.753 C18.065,22.753 0.719,27.863 0.719,34.166 C0.719,40.469 18.065,45.578 39.462,45.578 Z" filter="url(#a)"/>
-      <g transform="translate(20)">
-        <polygon fill="#94CA44" points=".414 .777 40.584 .777 40.584 9.052 .414 9.052"/>
-        <g transform="translate(0 12)">
-          <polygon fill="#049ADC" points=".44 .406 12.283 .406 12.283 27.97 .44 27.97"/>
-          <polygon fill="#F2208A" points="16.082 .406 40.385 .406 40.385 27.97 16.082 27.97"/>
-        </g>
-        <polygon fill="#32B1E2" points=".44 12.35 12.283 12.35 12.283 22.607 .44 25.39"/>
-        <polygon fill="#FC339C" points="16.082 12.35 40.272 12.35 40.272 16.092 16.082 22.365 16.082 12.35"/>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31.143 9.4v39.21h-3.247a4 4 0 0 1-4-4V13.4a4 4 0 0 1 4-4zm3.04 0h25.923a4 4 0 0 1 4 4v31.21a4 4 0 0 1-4 4H34.182z" fill="#c660e2"/>
+      <g fill="#fff">
+        <path d="M45.824 45.102a6.232 6.232 0 0 1-3.726 1.242c-3.6 0-6.52-3.1-6.52-6.925 0-3.825 2.92-6.925 6.52-6.925 1.385 0 2.67.459 3.726 1.241v-1.24h2.794v13.849h-2.794zm-3.726-1.643c2.101 0 3.804-1.809 3.804-4.04s-1.703-4.04-3.804-4.04-3.804 1.809-3.804 4.04 1.703 4.04 3.804 4.04z" fill-rule="nonzero"/>
+        <path d="M59.258 32.503h3.332l-4.885 6.99 4.885 6.82h-3.576l-3.037-4.347-3.038 4.347h-3.576l4.886-6.82-4.886-6.99h3.332l3.282 4.58z"/>
       </g>
     </g>
   </svg>

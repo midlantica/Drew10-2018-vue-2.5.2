@@ -1,17 +1,19 @@
 <template>
-  <div class='skills'>
-    <iconUiux class="uiux" />
-    <iconHtml5 class="html5" />
-    <iconCss3 class="css3" />
-    <iconJs class="js" />
-    <iconSketch class="sketch" />
-    <iconSass class="sass" />
-    <iconVue class="vue" />
-    <iconSvg class="svg" />
-    <iconTerminal class="terminal" />
-    <iconNode class="node" />
-    <iconWebpack class="webpack" />
-    <iconAxure class="axure" />
+  <div class="skillsGrid">
+    <iconUiux class="icon uiux" />
+    <iconHtml5 class="icon html5" />
+    <iconCss3 class="icon css3" />
+    <iconJs class="icon js" />
+
+    <iconSketch class="icon sketch" />
+    <iconSass class="icon sass" />
+    <iconVue class="icon vue" />
+    <iconSvg class="icon svg" />
+
+    <iconTerminal class="icon terminal" />
+    <iconNode class="icon node" />
+    <iconWebpack class="icon webpack" />
+    <iconAxure class="icon axure" />
   </div>
 </template>
 
@@ -49,1078 +51,225 @@
 <style lang="scss" scoped>
   @import "./src/assets/css/_base.scss";
 
-  .skills {
-
-    // DEFAULT 4 COLUMNS >>>>>>>>
+  .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      'uiux      html5  css3     javascript'
-      'sketch    sass   vue      svg'
-      'terminal  node    webpack  axure';
-    // grid-auto-flow: row dense;
-    justify-items: center;
-    align-items: stretch;
-    grid-gap: 1.5em 0em;
-    // border: 0 !important;
-    // border: 1px solid pink;
-    // @include clearfix;
+    grid-gap: 1.75em;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(4, minmax(auto, 130px));
+    // background: beige;
+    // width: 100%;
 
-    // ##################################################
-    /* ----------- Laptop / Desktop  ----------- */
+    // @media (min-width: 2000px) {
+    //   grid-template-columns: repeat(12, minmax(auto, 130px));
+    // }
 
-    @media screen
-      and (min-width: 650px)
-      and (max-width: 1040px)
-      // and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure'  !important;
-      grid-gap: 0em 0em;
+    @media (max-width: 1024px) and (min-width: 736px) {
+      grid-template-columns: repeat(6, minmax(auto, 130px));
+      justify-content: space-between;
+      grid-gap: 1.25em;
+      // width: 80%;
+      // background: lightblue;
+    }
+
+    // @media (min-device-width: 768px)
+    // and (max-device-width: 1024px)
+    // and (-webkit-min-device-pixel-ratio: 1) {
+    //   grid-template-columns: repeat(6, minmax(auto, 130px));
+    //   justify-content: space-between;
+    //   grid-gap: 1em;
+    //   width: 100%;
+    //   background: rgba(201, 222, 198, 0.75); // pale green
+    // }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      display: flex;
+      // width: 100%;
+      flex-wrap: wrap;
+      // background: rgba(201, 222, 198, 0.75); // pale green
+    }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1)
+    and (orientation : landscape) {
+      display: flex;
+      // width: 100%;
+      flex-wrap: wrap;
+      // background: rgba(201, 222, 198, 0.75); // pale green
+    }
+
+    @media (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      grid-template-columns: repeat(2, minmax(auto, 130px));
+      justify-content: space-between;
+      grid-gap: 1em;
+      grid-column-gap: 2em;
+      // width: 100%;
+      // background: rgba(246, 128, 97, .5); // pale orange
+      justify-content: center;
+    }
+
+
+    @media (min-width: 414px) and (max-width: 736) {
+      grid-template-columns: repeat(4, minmax(auto, 130px));
+      grid-gap: 1.5em;
+      // background: aqua;
+    }
+
+    @media (max-width: 414px) {
+      grid-template-columns: repeat(3, minmax(auto, 130px));
+      grid-gap: 1.0em;
+      // background: yellow;
+    }
+
+    @media (max-width: 310px) {
+      grid-template-columns: repeat(2, minmax(auto, 130px));
+      grid-gap: 0.75em;
+      // background: orange;
+    }
+
+    @media (max-width: 210px) {
+      grid-template-columns: repeat(1, minmax(auto, 130px));
+      grid-gap: 0.5em;
       // background: red;
     }
 
-    // @media only screen
-    //   and (min-device-width: 936px)
-    //   and (max-device-width: 516px)
-    //   and (-webkit-min-device-pixel-ratio: 2)
-    //   and (min-resolution: 192dpi)
-    // {
-    //   //
-    //   background: red !important;
-    // }
+    .icon {
+      margin: auto;
+      // width: 88px;
+      // height: 60px;
+      // background: orange;
+      display: inline-block;
+      clear: left;
+      margin: .5em 0.65em 0;
+      text-align: center;
+      flex-grow: 1;
 
-    // ##################################################
-    /* ----------- iPhone 4 and 4S ----------- */
-
-    @media only screen
-      and (min-device-width: 0px) // ZEROOOOO
-      and (max-device-width: 479px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      // ZEROOO WIDTH
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:
-        'uiux     html5'
-        'css3     sketch'
-        'sass     javascript'
-        'vue      svg'
-        'terminal node'
-        'webpack  axure';
-        grid-gap: 0em 0em;
-        // background: blue;
-    }
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:
-        'uiux     html5'
-        'css3     sketch'
-        'sass     javascript'
-        'vue      svg'
-        'terminal node'
-        'webpack  axure';
-      grid-gap: 0em 0em;
-      justify-items: center;
-      align-items: center;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        'uiux   html5   css3'
-        'sketch sass    javascript'
-        'vue    svg     terminal'
-        'node    webpack axure';
-      grid-gap: 0em 0em;
-      justify-items: center;
-      align-items: center;
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-    }
-
-    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        'uiux   html5   css3'
-        'sketch sass    javascript'
-        'vue    svg     terminal'
-        'node    webpack axure';
-      grid-gap: .5em 0em;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-      // display: grid;
-      // grid-template-columns: repeat(3, 1fr);
-      // grid-template-areas:
-      //   'uiux   html5   css3'
-      //   'sketch sass    javascript'
-      //   'vue    svg     terminal'
-      //   'node    webpack axure';
-      // grid-gap: 1em 0em;
-      // background: magenta;
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
-      // grid-template-areas:
-      //   'uiux      html5  css3     javascript'
-      //   'sketch    sass   vue      svg'
-      //   'terminal  node    webpack  axure';
-      // grid-gap: 1em 0em;
-      // background: magenta;
-    }
-
-    /* SAMSUNG S7 360 x 640 */
-    @media only screen
-      and (min-device-width: 360px)
-      and (max-device-width: 640px)
-      and (orientation: portrait)
-      // and (-webkit-min-device-pixel-ratio: 3)
-      // and (-webkit-device-pixel-ratio: 4)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        'uiux   html5   css3'
-        'sketch sass    javascript'
-        'vue    svg     terminal'
-        'node    webpack axure';
-      grid-gap: 1em 0em;
-      // background: magenta;
-    }
-
-    @media only screen
-      and (min-device-width: 360px)
-      and (max-device-width: 640px)
-      and (orientation: landscape)
-      // and (-webkit-min-device-pixel-ratio: 3)
-      // and (-webkit-device-pixel-ratio: 4)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-        'uiux      html5  css3     javascript'
-        'sketch    sass   vue      svg'
-        'terminal  node    webpack  axure';
-      grid-gap: 1em 0em;
-      // background: magenta;
-    }
-
-    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        'uiux   html5   css3'
-        'sketch sass    javascript'
-        'vue    svg     terminal'
-        'node    webpack axure';
-      grid-gap: 0em 0em;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr)  !important;
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure'  !important;
-      grid-gap: 0em 0em;
-      // background: red !important;
-    }
-
-    /* ----------- Pixel 2 ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      //
-      display: grid;
-      grid-template-columns: repeat(4, 1fr) !important;
-      grid-template-areas:
-        'uiux      html5  css3     javascript'
-        'sketch    sass   vue      svg'
-        'terminal  node    webpack  axure' !important;
-      grid-gap: 0em 0em;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr) !important;
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure' !important;
-      grid-gap: 0em 0em;
-      // background: red !important;
-    }
-    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(4, 1fr) !important;
-      grid-template-areas:
-        'uiux      html5  css3     javascript'
-        'sketch    sass   vue      svg'
-        'terminal  node    webpack  axure' !important;
-      grid-gap: 0em 0em;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr) !important;
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure' !important;
-      grid-gap: 0em 0em;
-    }
-
-    /* ----------- iPhone X ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        'uiux   html5   css3'
-        'sketch sass    javascript'
-        'vue    svg     terminal'
-        'node    webpack axure';
-      grid-gap: 1em 0em;
-      // background: magenta;
-
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape)
-    {
-      //
-    }
-
-    // ##################################################
-    /* ----------- Nexus 7 ----------- */
-
-    @media only screen
-      and (min-device-width: 600px)
-      and (max-device-width: 960px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-        'uiux      html5  css3     javascript'
-        'sketch    sass   vue      svg'
-        'terminal  node    webpack  axure';
-      grid-gap: 0em 0em;
-    }
-
-    // ##################################################
-    /* ----------- iPad 1, 2, Mini and Air ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 768px)
+      @media (min-device-width: 768px)
       and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure';
-      grid-gap: 0em 0em;
-    }
-
-    /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas:
-        'uiux  html5  css3      javascript  sketch   sass'
-        'vue   svg    terminal  node         webpack  axure';
-      grid-gap: 0em 0em;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* ----------- iPad Pro 10.5" ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 834px)
-      and (max-device-width: 1112px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 834px)
-      and (max-device-width: 834px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1112px)
-      and (max-device-width: 1112px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* ----------- iPad Pro 12.9" ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 1024px)
-      and (max-device-width: 1366px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1024px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
-
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1366px)
-      and (max-device-width: 1366px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      and (-webkit-min-device-pixel-ratio: 2) {
+        margin: .5em 2.3em 0;
       }
-      // IIIIIIIIII      CCCCCCCCCCCCC     OOOOOOOOO     NNNNNNNN        NNNNNNNN
-// I::::::::I   CCC::::::::::::C   OO:::::::::OO   N:::::::N       N::::::N
-// I::::::::I CC:::::::::::::::C OO:::::::::::::OO N::::::::N      N::::::N
-// II::::::IIC:::::CCCCCCCC::::CO:::::::OOO:::::::ON:::::::::N     N::::::N
-//   I::::I C:::::C       CCCCCCO::::::O   O::::::ON::::::::::N    N::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON:::::::::::N   N::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON:::::::N::::N  N::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON::::::N N::::N N::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON::::::N  N::::N:::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON::::::N   N:::::::::::N
-//   I::::IC:::::C              O:::::O     O:::::ON::::::N    N::::::::::N
-//   I::::I C:::::C       CCCCCCO::::::O   O::::::ON::::::N     N:::::::::N
-// II::::::IIC:::::CCCCCCCC::::CO:::::::OOO:::::::ON::::::N      N::::::::N
-// I::::::::I CC:::::::::::::::C OO:::::::::::::OO N::::::N       N:::::::N
-// I::::::::I   CCC::::::::::::C   OO:::::::::OO   N::::::N        N::::::N
-// IIIIIIIIII      CCCCCCCCCCCCC     OOOOOOOOO     NNNNNNNN         NNNNNNN
 
-  .icon {
-    width: 94px;
-    height: 64px;
-    background-size: 94px 64px;
-    background-size: cover !important;
-    // margin-bottom: 1.3em;
-    // border: 1px dashed DarkKhaki; // <<<<<<<<<<<<<<<<<<<
-
-    // &:nth-child(9n),
-    // &:nth-child(10n),
-    // &:nth-child(11n),
-    // &:nth-child(12n) {
-    //   margin-bottom: 0 ;
-    // }
-        // ##################################################
-    /* ----------- iPhone 4 and 4S ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      // margin: 0 !important;
-
-      // &:nth-child(9n),
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: 0  !important;
-      // }
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-      margin: 0 !important;
-
-      // &:nth-child(7n),
-      // &:nth-child(8n),
-      // &:nth-child(9n),
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin: 0 !important;
-      // }
-    }
-
-    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      // margin: 0 0 0em !important;
-
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: .5em !important;
-      //   // border: 1px solid red;
-      // }
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-    }
-        /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      // margin: 0 0 0.25em;
-
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: .5em;
-      //   // border: 1px solid red;
-      // }
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-    }
-
-    /* ----------- Pixel 2 ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      // margin: 0 !important;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 411px)
-      and (max-device-width: 731px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)
-    {
-      //
-    }
-        /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-    {
-      //
-      // margin: 0 !important;
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait)
-    {
-      //
-      // margin: 0 1.1em;
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 414px)
-      and (max-device-width: 736px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape)
-    {
-      //
-    }
-
-    /* ----------- iPhone X ----------- */
-
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-    {
-      // margin: 0 0 0.25em !important;
-
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: .5em !important;
-      //   // border: 1px solid red;
-      // }
-    }
-
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait)
-    {
-      //
-    }
-
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape)
-    {
-      //
-    }
-
-    // ##################################################
-    /* ----------- Nexus 7 ----------- */
-
-    @media only screen
-      and (min-device-width: 600px)
-      and (max-device-width: 960px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-      // margin: 0 0 0em !important;
-
-      // &:nth-child(9n),
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: 0em !important;
-      //   // border: 1px solid red;
-      // }
-    }
-
-    // ##################################################
-    /* ----------- iPad 1, 2, Mini and Air ----------- */
-        /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 768px)
+      @media (min-device-width: 768px)
       and (max-device-width: 1024px)
       and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-    }
+      and (orientation : landscape) {
+        margin: .5em 2.2em 0;
+        text-align: center;
+        // background: rgba(201, 222, 198, 0.75); // pale green
+      }
 
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-    }
+      &.uiux {
+        // grid-area: uiux;
+        // background: url("../assets/img/icons/uiux.svg");
+      }
 
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 1)
-    {
-      //
-    }
+      &.terminal {
+        // grid-area: terminal;
+        // background: url("../assets/img/icons/terminal.svg");
+      }
 
-    /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+      &.yo {
+        // grid-area: yo;
+        // background: url("../assets/img/icons/yeoman.svg");
+      }
 
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      // margin: 0 0 0em !important;
+      &.html5 {
+        // grid-area: html5;
+        // background: url("../assets/img/icons/html5.svg");
+      }
 
-      // &:nth-child(7n),
-      // &:nth-child(8n),
-      // &:nth-child(9n),
-      // &:nth-child(10n),
-      // &:nth-child(11n),
-      // &:nth-child(12n) {
-      //   margin-bottom: 0.5em !important;
-      //   // border: 1px solid red;
-      // }
-    }
+      &.sublime_text {
+        // grid-area: sublime_text;
+        // background: url("../assets/img/icons/sublime.svg");
+      }
 
-    /* Portrait */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.javascript {
+        // grid-area: javascript;
+        // background: url("../assets/img/icons/javascript.svg");
+      }
 
-    /* Landscape */
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.css3 {
+        // grid-area: css3;
+        // background: url("../assets/img/icons/css.svg");
+      }
 
-    /* ----------- iPad Pro 10.5" ----------- */
+      &.sass {
+        // grid-area: sass;
+        // background: url("../assets/img/icons/sass.svg");
+      }
 
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 834px)
-      and (max-device-width: 1112px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.axure {
+        // grid-area: axure;
+        // background: url("../assets/img/icons/axure.svg");
+      }
 
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 834px)
-      and (max-device-width: 834px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.cs {
+        // grid-area: cs;
+        // background: url("../assets/img/icons/cs.svg");
+      }
 
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1112px)
-      and (max-device-width: 1112px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.compass {
+        // grid-area: compass;
+        // background: url("../assets/img/icons/compass.svg");
+      }
 
-    /* ----------- iPad Pro 12.9" ----------- */
+      &.ruby {
+        // grid-area: ruby;
+        // background: url("../assets/img/icons/ruby.svg");
+      }
 
-    /* Portrait and Landscape */
-    @media only screen
-      and (min-device-width: 1024px)
-      and (max-device-width: 1366px)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.meteor {
+        // grid-area: meteor;
+        // background: url("../assets/img/icons/meteor.svg");
+      }
 
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1024px)
-      and (max-device-width: 1024px)
-      and (orientation: portrait)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.react {
+        // grid-area: react;
+        // background: url("../assets/img/icons/react.svg");
+      }
 
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen
-      and (min-device-width: 1366px)
-      and (max-device-width: 1366px)
-      and (orientation: landscape)
-      and (-webkit-min-device-pixel-ratio: 2)
-    {
-      //
-    }
+      &.angular {
+        // grid-area: angular;
+        // background: url("../assets/img/icons/angular.svg");
+      }
 
-    &.uiux {
-      grid-area: uiux;
-      // background: url("../assets/img/icons/uiux.svg");
-    }
+      &.svg {
+        // grid-area: svg;
+        // background: url("../assets/img/icons/svg.svg");
+      }
 
-    &.terminal {
-      grid-area: terminal;
-      // background: url("../assets/img/icons/terminal.svg");
-    }
+      &.cs_icons {
+        // grid-area: cs_icons;
+        // background: url("../assets/img/icons/cs_icons.svg");
+      }
 
-    &.yo {
-      grid-area: yo;
-      // background: url("../assets/img/icons/yeoman.svg");
-    }
+      &.sketch {
+        // grid-area: sketch;
+        // background: url("../assets/img/icons/sketch.svg");
+      }
 
-    &.html5 {
-      grid-area: html5;
-      // background: url("../assets/img/icons/html5.svg");
-    }
+      &.sketch {
+        // grid-area: node;
+        // background: url("../assets/img/icons/sketch.svg");
+      }
 
-    &.sublime_text {
-      grid-area: sublime_text;
-      // background: url("../assets/img/icons/sublime.svg");
-    }
+      &.vue {
+        // grid-area: vue;
+        // background: url("../assets/img/icons/vue.svg");
+      }
 
-    &.javascript {
-      grid-area: javascript;
-      // background: url("../assets/img/icons/javascript.svg");
-    }
-
-    &.css3 {
-      grid-area: css3;
-      // background: url("../assets/img/icons/css.svg");
-    }
-
-    &.sass {
-      grid-area: sass;
-      // background: url("../assets/img/icons/sass.svg");
-    }
-
-    &.axure {
-      grid-area: axure;
-      // background: url("../assets/img/icons/axure.svg");
-    }
-
-    &.cs {
-      grid-area: cs;
-      // background: url("../assets/img/icons/cs.svg");
-    }
-
-    &.compass {
-      grid-area: compass;
-      // background: url("../assets/img/icons/compass.svg");
-    }
-
-    &.ruby {
-      grid-area: ruby;
-      // background: url("../assets/img/icons/ruby.svg");
-    }
-
-    &.meteor {
-      grid-area: meteor;
-      // background: url("../assets/img/icons/meteor.svg");
-    }
-
-    &.react {
-      grid-area: react;
-      // background: url("../assets/img/icons/react.svg");
-    }
-
-    &.angular {
-      grid-area: angular;
-      // background: url("../assets/img/icons/angular.svg");
-    }
-
-    &.svg {
-      grid-area: svg;
-      // background: url("../assets/img/icons/svg.svg");
-    }
-
-    &.cs_icons {
-      grid-area: cs_icons;
-      // background: url("../assets/img/icons/cs_icons.svg");
-    }
-
-    &.sketch {
-      grid-area: sketch;
-      // background: url("../assets/img/icons/sketch.svg");
-    }
-
-    &.sketch {
-      grid-area: node;
-      // background: url("../assets/img/icons/sketch.svg");
-    }
-
-    &.vue {
-      grid-area: vue;
-      // background: url("../assets/img/icons/vue.svg");
-    }
-
-    &.webpack {
-      grid-area: webpack;
-      // background: url("../assets/img/icons/webpack.svg");
+      &.webpack {
+        // grid-area: webpack;
+        // background: url("../assets/img/icons/webpack.svg");
+      }
     }
   }
 
