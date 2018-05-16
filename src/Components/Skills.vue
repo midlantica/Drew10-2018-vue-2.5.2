@@ -102,6 +102,7 @@
       // grid-column-gap: 0em;
       // background: aqua;
       grid-row-gap: .75em;
+      grid-row-gap: 1.25em;
     }
 
     @media (max-width: 414px)
@@ -131,31 +132,7 @@
     }
 
     .icon {
-      margin: auto;
-      // width: 88px;
-      // height: 60px;
-      // background: orange;
-      // display: inline-block;
-      // clear: left;
-      // margin: .5em auto;
-      // text-align: center;
-      // flex-grow: 1;
-
-      @media (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      {
-        // margin: 0em 2.8em 0em;
-      }
-
-      @media (min-device-width: 0px)
-        and (min-device-width: 375px)
-      {
-        // border: 1px solid red;
-        // margin: auto;
-        // margin: 0 0em;
-      }
-
+      // margin: auto;
     }
   }
 
