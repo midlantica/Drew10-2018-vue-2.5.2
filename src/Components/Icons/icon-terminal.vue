@@ -1,14 +1,16 @@
 <template>
   <svg width="88" height="60" xmlns="http://www.w3.org/2000/svg">
   <title>Command Line</title>
-  <g fill="none" fill-rule="evenodd">
-    <g transform="translate(22.321 10.355)" fill-rule="nonzero">
-      <rect fill="#C7C7C7" width="43.344" height="36.522" rx="1"/>
-      <path fill="#282828" d="M3.912 3.367h35.949v29.02H3.912z"/>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-21.000000, -202.000000)" fill-rule="nonzero">
+            <g id="terminal" transform="translate(44.656320, 214.993171)">
+                <g id="Group" transform="translate(0.874329, 0.378060)" fill="#454545">
+                    <path d="M3.9712405,0.0312066941 L36.2553686,0.0312066941 C37.9122228,0.0312066941 39.2553686,1.37435244 39.2553686,3.03120669 L39.2553686,28.6555147 C39.2553686,30.3123689 37.9122228,31.6555147 36.2553686,31.6555147 L3.9712405,31.6555147 C2.31438625,31.6555147 0.971240502,30.3123689 0.971240502,28.6555147 L0.971240502,3.03120669 C0.971240502,1.37435244 2.31438625,0.0312066941 3.9712405,0.0312066941 Z" id="Rectangle-path"></path>
+                </g>
+                <polygon id="Shape" fill="#FFA700" points="13.3950309 9.56817395 26.9306305 15.7342732 13.3950309 22.0771552 13.3950309 25.3636116 30.580237 17.3476826 30.580237 14.1102142 13.3950309 6.08683053 13.3950309 9.56604404"></polygon>
+            </g>
+        </g>
     </g>
-    <path stroke="#717171" d="M26.233 13.724h35.95v29.02h-35.95z"/>
-    <path fill="#FFA700" fill-rule="nonzero" d="M36.995 22.717l12.71 5.79-12.71 5.956v3.086l16.137-7.527v-3.04l-16.137-7.534v3.267z"/>
-  </g>
 </svg>
 
 </template>

@@ -39,19 +39,14 @@
     display: grid;
     // COLUMNS ||  ||  ||
     grid-template-columns:
-      minmax(0, 1fr)
-      repeat(1, minmax(auto, 1024px))
-      minmax(0, 1fr);
+      minmax(0, 1fr) repeat(1, minmax(auto, 1024px)) minmax(0, 1fr);
     grid-gap: 0em;
     // @include shadow;
 
     > main {
       display: grid;
       // ROWS
-      grid-template-rows:
-        1fr
-        auto
-        1fr;
+      grid-template-rows: 1fr auto 1fr;
       background: white; // ivory
       @include shadow;
 

@@ -53,90 +53,80 @@
 
   .skillsGrid {
     display: grid;
-    grid-gap: 1.75em;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: stretch;
+    // justify-content: space-around;
     // justify-content: space-between;
+    justify-content: space-between;
+    justify-items: center;
+    //
+    margin: .5em auto 0;
     align-items: center;
-    grid-template-columns: repeat(4, minmax(auto, 130px));
+    grid-template-columns: repeat(4, minmax(auto, auto));
+    grid-row-gap: 2em;
+    grid-column-gap: 0em;
+    // grid-column-gap: 1.5em;
     // background: beige;
-    // width: 100%;
+    margin-bottom: .5em;
 
-    // @media (min-width: 2000px) {
-    //   grid-template-columns: repeat(12, minmax(auto, 130px));
-    // }
 
-    @media (max-width: 1024px) and (min-width: 736px) {
-      grid-template-columns: repeat(6, minmax(auto, 130px));
-      justify-content: space-between;
-      grid-gap: 1.25em;
-      // width: 80%;
+    @media (min-width: 736px) and
+      (max-width: 1024px)
+    {
+      grid-template-columns: repeat(6, minmax(auto, auto));
+      // grid-column-gap: 0em;
+      grid-row-gap: 1em;
+      // justify-content: stretch;
+      // grid-column-gap: 0em;
       // background: lightblue;
     }
 
-    // @media (min-device-width: 768px)
-    // and (max-device-width: 1024px)
-    // and (-webkit-min-device-pixel-ratio: 1) {
-    //   grid-template-columns: repeat(6, minmax(auto, 130px));
-    //   justify-content: space-between;
-    //   grid-gap: 1em;
-    //   width: 100%;
-    //   background: rgba(201, 222, 198, 0.75); // pale green
-    // }
-
     @media (min-device-width: 768px)
     and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-      display: flex;
-      // width: 100%;
-      flex-wrap: wrap;
-      // background: rgba(201, 222, 198, 0.75); // pale green
-    }
-
-    @media (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1)
-    and (orientation : landscape) {
-      display: flex;
-      // width: 100%;
-      flex-wrap: wrap;
-      // background: rgba(201, 222, 198, 0.75); // pale green
-    }
-
-    @media (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-      grid-template-columns: repeat(2, minmax(auto, 130px));
-      justify-content: space-between;
-      grid-gap: 1em;
-      grid-column-gap: 2em;
-      // width: 100%;
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      grid-template-columns: repeat(6, minmax(auto, auto));
+      // justify-content: center;
+      // grid-row-gap: 1.5em;
+      // grid-column-gap: 0em;
+      // grid-column-gap: 0em;
       // background: rgba(246, 128, 97, .5); // pale orange
-      justify-content: center;
+
     }
 
-
-    @media (min-width: 414px) and (max-width: 736) {
-      grid-template-columns: repeat(4, minmax(auto, 130px));
-      grid-gap: 1.5em;
+    @media (min-width: 414px) and (max-width: 736)
+    {
+      grid-template-columns: repeat(4, minmax(auto, auto));
+      // grid-row-gap: 1.5em;
+      // grid-column-gap: 0em;
       // background: aqua;
+      grid-row-gap: .75em;
     }
 
-    @media (max-width: 414px) {
-      grid-template-columns: repeat(3, minmax(auto, 130px));
-      grid-gap: 1.0em;
+    @media (max-width: 414px)
+    {
+      grid-template-columns: repeat(3, minmax(auto, auto));
+      // grid-row-gap: 1.5em;
+      // grid-column-gap: 5em;
       // background: yellow;
+      grid-row-gap: .75em;
     }
 
-    @media (max-width: 310px) {
-      grid-template-columns: repeat(2, minmax(auto, 130px));
-      grid-gap: 0.75em;
+    @media (max-width: 310px)
+    {
+      grid-template-columns: repeat(2, minmax(auto, auto));
+      // grid-row-gap: 0.75em;
+      // grid-column-gap: 0em;
       // background: orange;
+      grid-row-gap: .75em;
     }
 
-    @media (max-width: 210px) {
-      grid-template-columns: repeat(1, minmax(auto, 130px));
-      grid-gap: 0.5em;
+    @media (max-width: 210px)
+    {
+      grid-template-columns: repeat(1, minmax(auto, auto));
+      // grid-row-gap: 0.5em;
+      // grid-column-gap: 0em;
       // background: red;
     }
 
@@ -145,131 +135,27 @@
       // width: 88px;
       // height: 60px;
       // background: orange;
-      display: inline-block;
-      clear: left;
-      margin: .5em 0.65em 0;
-      text-align: center;
-      flex-grow: 1;
+      // display: inline-block;
+      // clear: left;
+      // margin: .5em auto;
+      // text-align: center;
+      // flex-grow: 1;
 
       @media (min-device-width: 768px)
       and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 2) {
-        margin: .5em 2.3em 0;
+      and (-webkit-min-device-pixel-ratio: 2)
+      {
+        // margin: 0em 2.8em 0em;
       }
 
-      @media (min-device-width: 768px)
-      and (max-device-width: 1024px)
-      and (-webkit-min-device-pixel-ratio: 1)
-      and (orientation : landscape) {
-        margin: .5em 2.2em 0;
-        text-align: center;
-        // background: rgba(201, 222, 198, 0.75); // pale green
+      @media (min-device-width: 0px)
+        and (min-device-width: 375px)
+      {
+        // border: 1px solid red;
+        // margin: auto;
+        // margin: 0 0em;
       }
 
-      &.uiux {
-        // grid-area: uiux;
-        // background: url("../assets/img/icons/uiux.svg");
-      }
-
-      &.terminal {
-        // grid-area: terminal;
-        // background: url("../assets/img/icons/terminal.svg");
-      }
-
-      &.yo {
-        // grid-area: yo;
-        // background: url("../assets/img/icons/yeoman.svg");
-      }
-
-      &.html5 {
-        // grid-area: html5;
-        // background: url("../assets/img/icons/html5.svg");
-      }
-
-      &.sublime_text {
-        // grid-area: sublime_text;
-        // background: url("../assets/img/icons/sublime.svg");
-      }
-
-      &.javascript {
-        // grid-area: javascript;
-        // background: url("../assets/img/icons/javascript.svg");
-      }
-
-      &.css3 {
-        // grid-area: css3;
-        // background: url("../assets/img/icons/css.svg");
-      }
-
-      &.sass {
-        // grid-area: sass;
-        // background: url("../assets/img/icons/sass.svg");
-      }
-
-      &.axure {
-        // grid-area: axure;
-        // background: url("../assets/img/icons/axure.svg");
-      }
-
-      &.cs {
-        // grid-area: cs;
-        // background: url("../assets/img/icons/cs.svg");
-      }
-
-      &.compass {
-        // grid-area: compass;
-        // background: url("../assets/img/icons/compass.svg");
-      }
-
-      &.ruby {
-        // grid-area: ruby;
-        // background: url("../assets/img/icons/ruby.svg");
-      }
-
-      &.meteor {
-        // grid-area: meteor;
-        // background: url("../assets/img/icons/meteor.svg");
-      }
-
-      &.react {
-        // grid-area: react;
-        // background: url("../assets/img/icons/react.svg");
-      }
-
-      &.angular {
-        // grid-area: angular;
-        // background: url("../assets/img/icons/angular.svg");
-      }
-
-      &.svg {
-        // grid-area: svg;
-        // background: url("../assets/img/icons/svg.svg");
-      }
-
-      &.cs_icons {
-        // grid-area: cs_icons;
-        // background: url("../assets/img/icons/cs_icons.svg");
-      }
-
-      &.sketch {
-        // grid-area: sketch;
-        // background: url("../assets/img/icons/sketch.svg");
-      }
-
-      &.sketch {
-        // grid-area: node;
-        // background: url("../assets/img/icons/sketch.svg");
-      }
-
-      &.vue {
-        // grid-area: vue;
-        // background: url("../assets/img/icons/vue.svg");
-      }
-
-      &.webpack {
-        // grid-area: webpack;
-        // background: url("../assets/img/icons/webpack.svg");
-      }
     }
   }
 

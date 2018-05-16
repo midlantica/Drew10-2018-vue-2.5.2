@@ -57,15 +57,15 @@
       &:nth-child(1) {
         padding: 0 1em;
 
-        @media screen and (max-width: 1024px) {
-          //
+        @media screen and (min-width: 1024px) {
+          padding: 0em .5em 0em 1em;
         }
       }
       &:nth-child(2) {
         padding: 0 1em;
 
-        @media screen and (max-width: 1024px) {
-          // padding: 0 1em;
+        @media screen and (min-width: 1024px) {
+          padding: 0em 1em 0em .5em;
         }
       }
 

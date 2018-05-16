@@ -1,14 +1,19 @@
 <template>
   <svg height="60" width="88" xmlns="http://www.w3.org/2000/svg">
     <title>Sketch</title>
-    <g fill="none" fill-rule="evenodd">
-      <path d="M44 47.8L22.989 23.647l9.108-12.379L44 10l11.903 1.268 9.108 12.38z" fill="#ffae00"/>
-      <path d="M44 47.8L23 23.65h42z" fill="#ec6c00"/>
-      <path d="M44 47.8L31.4 23.65h25.2z" fill="#ffae00"/>
-      <path d="M44 10L31.4 23.65h25.2z" fill="#ffefb4"/>
-      <g fill="#fed305">
-        <path d="M32 11.28l-.6 12.37L44 10zM56 11.28l.6 12.37L44 10z"/>
-      </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-21.000000, -112.000000)">
+            <g id="Sketch" transform="translate(43.156320, 122.000000)">
+                <g id="Group-8">
+                    <polygon id="Polygon" fill="#FFAE00" points="22 37.8 0.988962058 13.6474326 10.097166 1.26845638 22 0 33.902834 1.26845638 43.0106278 13.6474326"></polygon>
+                    <polygon id="Polygon" fill="#EC6C00" points="22 37.8 1 13.65 43 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FFAE00" points="22 37.8 9.4 13.65 34.6 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FFEFB4" points="22 0 9.4 13.65 34.6 13.65"></polygon>
+                    <polygon id="Polygon" fill="#FED305" points="10 1.2796875 9.4 13.65 22 2.95585778e-12"></polygon>
+                    <polygon id="Polygon" fill="#FED305" points="34 1.2796875 34.6 13.65 22 0"></polygon>
+                </g>
+            </g>
+        </g>
     </g>
   </svg>
 </template>
