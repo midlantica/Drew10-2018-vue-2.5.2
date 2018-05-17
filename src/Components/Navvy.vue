@@ -70,7 +70,7 @@
     font-weight: normal;
     letter-spacing: .06em;
     font-family: $font-head;
-    @include text-shadow(rgba($accent-red, 1) 5px 0px 3px);
+    @include text-shadow(rgba($accent-red, 1) 4px 0px 3px);
     transition: .25s ease-in;
     //
     flex-grow: 0;
@@ -159,6 +159,7 @@
     margin-bottom: 4px;
     z-index: 10;
     // border: 1px solid $outBlue;
+    @include text-shadow(rgba(black, 1) 3px 0px 1px);
     transition: .25s ease-in;
 
     @media (max-width: $breakOne) {

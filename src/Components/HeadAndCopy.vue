@@ -12,64 +12,37 @@
   </div>
 </template>
 
-<script>
-
-</script>
-
 <style lang="scss" scoped>
   @import "./src/assets/css/_base.scss";
 
   .headBlock {
-    @include clearfix;
+    display: grid;
+    grid-template-columns: 88px auto;
+    grid-template-rows: auto;
+    grid-column-gap: 6px;
+    justify-items: start;
+    align-items: center;
+    // @include clearfix;
 
     a.drewhead {
-      margin: 0.3em 1em 0em 0em;
-      padding: 0;
+      background-image: url(../assets/img/drew_head.png);
+      background-repeat: no-repeat;
       width: 72px;
       height: 88px;
-      background-image: url(../assets/img/drew_head.png);
-      float: left;
       display: block;
-      clear: left;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
     }
 
     h1 {
       font-family: $font-subhead;
-      margin: 0;
       color: $accent-red;
-      line-height: 1.1em;
+      font-size: 1.8rem;
+      margin: .25em 0 0;
       padding: 0;
-      font-size: 6.3vw;
-      padding-top: 0.8em;
-
-      @media (min-width: 460px) {
-        font-size: 1.9em;
-        width: 95%;
-        // background: RGBA(222, 189, 235, .5);
-        padding-top: 0.7em;
-      }
-
-      @media (min-width: 600px) {
-        font-size: 2em;
-        width: 90%;
-        // background: RGBA(172, 234, 206, .5);
-        padding-top: 0.6em;
-      }
-
-      @media (min-width: 800px) {
-        font-size: 2em;
-        width: 61%;
-        // background: orange;
-        padding-top: .6em;
-      }
-
-      @media (min-width: 1024px) {
-        font-size: 1.6em;
-        width: 93%;
-        // background: pink;
-        padding-top: 0.9em;
-      }
-
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      transition: .25s ease-in;
     }
 
   }
