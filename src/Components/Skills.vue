@@ -69,6 +69,7 @@
     // grid-column-gap: 1.5em;
     // background: beige;
     margin-bottom: .5em;
+    transition: .25s ease-in;
 
 
     @media (min-width: 736px) and
