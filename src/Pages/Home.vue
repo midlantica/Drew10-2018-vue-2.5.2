@@ -49,6 +49,7 @@
                 3px 3px 5px transparentize(black, 0.2);
     padding-top: .5em;
     padding-bottom: .5em;
+    //
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
     }
