@@ -1,4 +1,4 @@
-/* eslint-disable indent */
+<!-- /* eslint-disable indent */ -->
 <template>
   <RouterView/>
 </template>
@@ -15,17 +15,16 @@
       Extras
     }
   }
-  require('@/assets/css/fonts/veneer/veneer.css')
-  require('@/assets/css/fonts/American_typewriter/american_typewriter/american_typewriter.css')
-  require('@/assets/css/vendor/html5Boilerplate.css')
-  require('@/assets/css/vendor/normalize.css')
 </script>
 
 <style lang="scss">
-  @import "./src/assets/css/_base.scss";
-  // @import "./src/assets/css/_layout.scss";
-  // @import "./src/assets/css/_innerGrid.scss";
-  @import "./src/assets/css/_styles.scss";
+  @import '../static/fonts/veneer/veneer.css';
+  @import '../static/fonts/American_typewriter/american_typewriter/american_typewriter.css';
+  // @import './src/assets/css/vendor/html5Boilerplate.css';
+  // @import './src/assets/css/vendor/normalize.css';
+  //
+  @import './assets/css/_base.scss';
+  @import './assets/css/_styles.scss';
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
