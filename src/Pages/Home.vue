@@ -18,7 +18,6 @@
 
 <script>
   import HeadAndCopy from '@/Components/HeadAndCopy'
-  import CarouselShow from '@/Components/Carousel/CarouselShow'
   import About from '@/Components/About'
   import Skills from '@/Components/Skills'
   // import Quotes from '@/Components/Quotes/QuotesVueCarousel2'
@@ -26,6 +25,8 @@
   // import Quotes from '@/Components/Quotes/QuotesSiema'
   // import Quotes from '@/Components/Quotes/QuotesVueAgile'
   import Quotes from '@/Components/Quotes/QuoteBasic'
+  const CarouselShow = () => import('@/Components/Carousel/CarouselShow')
+
   export default {
     components: {
       HeadAndCopy,

@@ -4,7 +4,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from '@/App'
 import Home from '@/Pages/Home'
-import Extras from '@/Pages/Extras'
+const Extras = () => import('@/Pages/Extras')
 //
 Vue.config.productionTip = false
 //
@@ -31,7 +31,6 @@ const router = new VueRouter({
   routes,
   mode: 'history'
 })
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
