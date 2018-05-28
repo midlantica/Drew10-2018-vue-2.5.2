@@ -37,7 +37,8 @@
     h1 {
       font-family: $font-subhead;
       color: $accent-red;
-      font-size: 1.8rem;
+      font-size: calc(1.4rem + 0.5vw);
+      // font-size: 1.8rem;
       margin: .25em 0 0;
       padding: 0;
       grid-column: 2 / 3;
@@ -48,11 +49,19 @@
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: calc(0.8rem + .75vw);
+    // font-size: 0.9rem;
     color: $grey;
-    margin: 1em 0em .5em .75em;
-    line-height: 2.6em;
+    margin: 1em 0em .5em .725em;
+    line-height: calc(2.3em + .5vw);
+    // line-height: 2.6em;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 0.9rem;
+      line-height: 2.6em;
+      // line-height: calc(1.9em + .6vw);
+    }
   }
 
 </style>

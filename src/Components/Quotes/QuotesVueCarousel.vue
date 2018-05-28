@@ -1,17 +1,24 @@
 <template>
   <carousel class="slideCarousel"
     :perPage=1
-    :navigationEnabled="false"
+    :navigationEnabled="true"
     :paginationEnabled="false"
     :autoplay="false"
     :autoplayTimeout="2500"
     :autoplayHoverPause="true"
     :loop="true"
     :navigationClickTargetSize="0"
+    navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
+    navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
   >
-    <slide :v-for="slide in slides" :key="item.id">
-      <p>{{ slides.quote }}</p>
-      <cite>{{ slides.att }}</cite>
+    <slide
+      v-for="(quote, index) in quotes"
+      v-bind:quote="quote"
+      v-bind:index="index"
+      v-bind:key="quote.id"
+    >
+      <p>{{ quote.quote }}</p>
+      <cite>{{ quote.att }}</cite>
     </slide>
   </carousel>
 </template>
@@ -23,140 +30,183 @@
       Carousel,
       Slide
     },
-    data: function () {
-      return slides
+    data () {
+      return {
+        quotes: []
+      }
+    },
+    mounted () {
+      setTimeout(() => {
+        this.quotes = [
+          {
+            'quote': '"The answer to life is knowing when to stop"',
+            'att': '– My Mom, when I was a kid :)'
+          },
+          {
+            'quote': '"If you can\'t explain it simply, you don\'t understand it well enough."',
+            'att': '– Albert Einstein'
+          },
+          {
+            'quote': '"If you can\'t explain it simply, you don\'t understand it well enough."',
+            'att': '– Albert Einstein'
+          },
+          {
+            'quote': '"Everything should be made as simple as possible, but not simpler."',
+            'att': '– Albert Einstein'
+          },
+          {
+            'quote': '"Design is not just what it looks like and feels like. Design is how it works"',
+            'att': '– Steve Jobs, 2003'
+          },
+          {
+            'quote': '"A picture is worth a thousand words. An interface is worth a thousand pictures"',
+            'att': '– Ben Shneiderman'
+          },
+          {
+            'quote': '"We do not see things as they are; we see things as we are"',
+            'att': '– The Talmud'
+          },
+          {
+            'quote': '"Measure twice, cut once"',
+            'att': '– Unknown'
+          },
+          {
+            'quote': '"You can use an eraser on the drafting table or a sledge hammer on the construction site."',
+            'att': '–Frank Lloyd Wright'
+          },
+          {
+            'quote': '"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away',
+            'att': '– Antoine de Saint-Exupery'
+          },
+          {
+            'quote': '"Design should never say, &lsquo;Look at me.\' It should always say, &lsquo;Look at this.\'"',
+            'att': '– David Craib'
+          },
+          {
+            'quote': '"Good web design is about the character of the content, not the character of the designer."',
+            'att': '– Jeffrey Zeldman'
+          },
+          {
+            'quote': '"Good design, when it\'s done well, becomes invisible. It\'s only when it\'s done poorly that we notice it.',
+            'att': '– Jared Spool'
+          },
+          {
+            'quote': '"Good design is about effective communication, not decoration at the expense of legibility."',
+            'att': '– Vitaly Friedman'
+          },
+          {
+            'quote': '"Good designers want to be proved wrong, bad designers hope to be proved right."',
+            'att': '– Andy Budd'
+          },
+          {
+            'quote': '"The ability to simplify means to eliminate the unnecessary so that the necessary may speak."',
+            'att': '– Hans Hofmann'
+          },
+          {
+            'quote': '"Simple is hard. Easy is harder. Invisible is hardest."',
+            'att': '– Jean-Louis Gasse'
+          },
+          {
+            'quote': '"As far as the customer is concerned, the interface is the product."',
+            'att': '– Jef Raskin'
+          },
+          {
+            'quote': '"A lot of what we are doing <br>is getting design out of the way."',
+            'att': '– Jonathan Ive'
+          },
+          {
+            'quote': '"The letter I have written today is longer than usual because I lacked the time to make it shorter"',
+            'att': '– Blaise Pascal'
+          },
+          {
+            'quote': '"If the user can\'t use it, it doesn\'t work"',
+            'att': '– Susan Dray'
+          },
+          {
+            'quote': '"If there\'s a \'trick\' to it, the UI is broken"',
+            'att': '– Douglas Anderson'
+          },
+          {
+            'quote': '"Know the user, and You are not the user."',
+            'att': '– Unknown'
+          },
+          {
+            'quote': '"Usability is like oxygen, you don\'t notice it until it\'s missing"',
+            'att': '– Unknown'
+          }
+        ]
+      }, 1000)
     }
   }
-  const slides = [
-    {
-      'quote': '&ldquo;The answer to life<br> is knowing when to stop&rdquo;',
-      'att': '&ndash; My Mom, when I was a kid :)'
-    },
-    {
-      'quote': '"&ldquo;If you can&rsquo;t explain it simply,<br> you don&rsquo;t understand it well enough.&rdquo;"',
-      'att': '&ndash; Albert Einstein'
-    },
-    {
-      'quote': '"&ldquo;If you can&rsquo;t explain it simply,<br> you don&rsquo;t understand it well enough.&rdquo;"',
-      'att': '&ndash; Albert Einstein'
-    },
-    {
-      'quote': '"&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;"',
-      'att': '&ndash; Albert Einstein'
-    },
-    {
-      'quote': '"&ldquo;Design is not just what it looks like and feels like. Design is how it works&rdquo;"',
-      'att': '&ndash; Steve Jobs, 2003'
-    },
-    {
-      'quote': '"&ldquo;A picture is worth a thousand words.<br> An interface is worth a thousand pictures&rdquo;"',
-      'att': '&ndash; Ben Shneiderman'
-    },
-    {
-      'quote': '"&ldquo;We do not see things as they are;<br> we see things as we are&rdquo;"',
-      'att': '&ndash; The Talmud'
-    },
-    {
-      'quote': '"&ldquo;Measure twice,<br> cut once"',
-      'att': '&ndash; Unknown'
-    },
-    {
-      'quote': '"&ldquo;You can use an eraser on the drafting table or a sledge hammer on the construction site.&rdquo;"',
-      'att': '&ndash;Frank Lloyd Wright'
-    },
-    {
-      'quote': '"&ldquo;Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away&rdquo;',
-      'att': '&ndash; Antoine de Saint-Exupery'
-    },
-    {
-      'quote': '"&ldquo;Design should never say, &lsquo;Look at me.&rsquo;<br> It should always say, &lsquo;Look at this.&rsquo;"',
-      'att': '&ndash; David Craib'
-    },
-    {
-      'quote': '"&ldquo;Good web design is about the character of the content, not the character of the designer.&rdquo;"',
-      'att': '&ndash; Jeffrey Zeldman'
-    },
-    {
-      'quote': '"&ldquo;Good design, when it&rsquo;s done well, becomes invisible. It&rdquo;s only when it&rdquo;s done poorly that we notice it.&rdquo;',
-      'att': '&ndash; Jared Spool'
-    },
-    {
-      'quote': '"&ldquo;Good design is about effective communication,<br> not decoration at the expense of legibility.&rdquo;"',
-      'att': '&ndash; Vitaly Friedman'
-    },
-    {
-      'quote': '"&ldquo;Good designers want to be proved wrong, bad designers hope to be proved right.&rdquo;"',
-      'att': '&ndash; Andy Budd'
-    },
-    {
-      'quote': '"&ldquo;The ability to simplify means to eliminate the unnecessary so that the necessary may speak.&rdquo;"',
-      'att': '&ndash; Hans Hofmann'
-    },
-    {
-      'quote': '"&ldquo;Simple is hard. Easy is harder. Invisible is hardest.&rdquo;"',
-      'att': '&ndash; Jean-Louis Gass&eacute;e'
-    },
-    {
-      'quote': '"&ldquo;As far as the customer is concerned,<br> the interface is the product.&rdquo;"',
-      'att': '&ndash; Jef Raskin'
-    },
-    {
-      'quote': '"&ldquo;A lot of what we are doing <br>is getting design out of the way.&rdquo;"',
-      'att': '&ndash; Jonathan Ive'
-    },
-    {
-      'quote': '"&ldquo;The letter I have written today is longer than usual because I lacked the time to make it shorter&rdquo;"',
-      'att': '&ndash; Blaise Pascal'
-    },
-    {
-      'quote': '"&ldquo;If the user can&rsquo;t use it, it doesn&rsquo;t work"',
-      'att': '&ndash; Susan Dray'
-    },
-    {
-      'quote': '"&ldquo;If there&rsquo;s a &lsquo;trick&rsquo; to it, the UI is broken"',
-      'att': '&ndash; Douglas Anderson'
-    },
-    {
-      'quote': '"&ldquo;Know the user, and You are not the user.&rdquo;"',
-      'att': '&ndash; Unknown'
-    },
-    {
-      'quote': '"&ldquo;Usability is like oxygen, you don&rsquo;t notice it<br> until it&rdquo;s missing&rdquo;"',
-      'att': '&ndash; Unknown'
-    }
-  ]
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import './src/assets/css/_base.scss';
 
   .VueCarousel.slideCarousel {
-    margin-bottom: .75em;
     background: $accent-red !important;
-    margin: 0 1em;
-    padding: .75em .5em 1em .5em;
+    margin: .75em 0 .5em !important;
+    padding: 1em 3em 1em;
+    // width: calc(400px);
     @include shadow;
     @include clearfix;
 
-    p {
-      color: $ivory !important;
-      text-align: center;
-      letter-spacing: .08em;
-      font-size: .7em;
+    .VueCarousel-wrapper {
+      //
+      .VueCarousel-inner {
+        // flex-basis: 500px;
+        // width: calc(100%);
+
+        p {
+          font-size: .85em !important;
+          color: $ivory !important;
+          text-align: center;
+          letter-spacing: .08em;
+          font-size: .7em;
+          letter-spacing: -0.002em;
+        }
+
+        cite {
+          font-size: .75em;
+          color: $ivory;
+          font-style: italic;
+          margin: 0 4em 0 0;
+          display: block;
+          text-align: right;
+          letter-spacing: .08em;
+          // width: 100%;
+          // display: inner;
+        }
+      }
+
     }
 
-    cite {
-      color: $ivory;
-      font-style: italic;
-      margin: 0 4em 0 0;
-      display: block;
-      text-align: right;
-      font-size: .7em;
-      letter-spacing: .08em;
-      // width: 100%;
-      // display: inner;
-    }
 
+  }
+
+  .VueCarousel-navigation button.VueCarousel-navigation-button.VueCarousel-navigation-next,
+  .VueCarousel-navigation button.VueCarousel-navigation-button.VueCarousel-navigation-prev {
+    //
+    > .navvy {
+      font-size: 1.5em;
+      cursor: pointer;
+      color: rgba(254, 254, 254, .25);
+      // -webkit-text-stroke: 1px rgba(254, 254, 254, .25);
+      // text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+      // background: red !important;
+      &:hover {
+        color: rgba(254, 254, 254, .5);
+        // text-shadow: 1px 1px 2px rgba(0, 0, 0, .85);
+        // background: $blue-dark;
+      }
+      &.leftnav {
+        transform: translateY(0%) translateX(150%);
+      }
+      &.rightnav {
+        transform: translateY(0%) translateX(-150%);
+      }
+
+    }
   }
 
 </style>

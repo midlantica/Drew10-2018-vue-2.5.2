@@ -70,7 +70,7 @@
     font-weight: normal;
     letter-spacing: .06em;
     font-family: $font-head;
-    @include text-shadow(rgba($accent-red, 1) 4px 0px 3px);
+    @include text-shadow(rgba(black, 1) 4px 0px 3px);
     transition: .25s ease-in;
     //
     flex-grow: 0;
@@ -120,7 +120,7 @@
     h2 {
       font-size: 1.7em;
       letter-spacing: .03em;
-      @include text-shadow(rgba($accent-red, 1) 3px 0px 3px);
+      @include text-shadow(rgba(black, 1) 3px 0px 3px);
 
       &:nth-child(1) {
         //

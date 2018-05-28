@@ -11,18 +11,18 @@
     navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
     navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
   >
-    <slide v-for="(image, index) in images"
+    <slide
+      v-for="(image, index) in images"
       v-bind:image="image"
       v-bind:index="index"
       v-bind:key="image.id"
     >
-      <img :src="image" alt="">
+      <img :src="image" :alt="image.slice(25,-4)">
     </slide>
   </carousel>
 </template>
 
 <script>
-/* eslint-disable indent */
   import { Carousel, Slide } from 'vue-carousel'
   export default {
     components: {
@@ -35,77 +35,78 @@
       }
     },
     mounted () {
+      const imgPath = 'static/img/portfolio/jpg/'
       setTimeout(() => {
         this.images = [
-          'static/img/portfolio/jpg/CivicInc_Bridge_01.jpg',
-          'static/img/portfolio/jpg/CivicInc_Bridge_02.jpg',
-          'static/img/portfolio/jpg/CivicInc_Bridge_03.jpg',
-          'static/img/portfolio/jpg/CivicInc_Funding_01.jpg',
-          'static/img/portfolio/jpg/CivicInc_Funding_02.jpg',
-          'static/img/portfolio/jpg/CivicInc_Land_01.jpg',
-          'static/img/portfolio/jpg/CivicInc_Land_02.jpg',
-          'static/img/portfolio/jpg/jpay_web_home.jpg',
-          'static/img/portfolio/jpg/jpay_web_signed_in.jpg',
-          'static/img/portfolio/jpg/jpay_web_money.jpg',
-          'static/img/portfolio/jpg/jpay_web_email.jpg',
-          'static/img/portfolio/jpg/jpay_web_stamps.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_home.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_home_signed_in.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_buy_jp3.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_music.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_music_songs_list.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_email_inbox.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_email_read.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_buys.jpg',
-          'static/img/portfolio/jpg/inmate_kiosk_UI_manage.jpg',
-          'static/img/portfolio/jpg/icons_red.jpg',
-          'static/img/portfolio/jpg/jpay_app_home.jpg',
-          'static/img/portfolio/jpg/jpay_app_home_prefs.jpg',
-          'static/img/portfolio/jpg/jpay_app_money_prefs.jpg',
-          'static/img/portfolio/jpg/jpay_app_email.jpg',
-          'static/img/portfolio/jpg/jpay_app_logos.jpg',
-          'static/img/portfolio/jpg/jpay_app_UI_old.jpg',
-          'static/img/portfolio/jpg/jpayinc_website_old.jpg',
-          'static/img/portfolio/jpg/jpayinc_website.jpg',
-          'static/img/portfolio/jpg/jpayinc_website_responsive.jpg',
-          'static/img/portfolio/jpg/jpay_infographgic_cloud.jpg',
-          'static/img/portfolio/jpg/jpay_icons_doc.jpg',
-          'static/img/portfolio/jpg/icons_doc_parole.jpg',
-          'static/img/portfolio/jpg/jpay_icons_cards_kiosk.jpg',
-          'static/img/portfolio/jpg/jpay_infographic_01.jpg',
-          'static/img/portfolio/jpg/jpay_infographic_02.jpg',
-          'static/img/portfolio/jpg/jpay_inforgraphic_money.jpg',
-          'static/img/portfolio/jpg/jpay_icons_email.jpg',
-          'static/img/portfolio/jpg/mlotto_logo.jpg',
-          'static/img/portfolio/jpg/mlotto_screens.jpg',
-          'static/img/portfolio/jpg/mlotto_web.jpg',
-          'static/img/portfolio/jpg/mlotto_brochure.jpg',
-          'static/img/portfolio/jpg/mlotto_UI_home.jpg',
-          'static/img/portfolio/jpg/mlotto_UI_play.jpg',
-          'static/img/portfolio/jpg/mlotto_UI_favs.jpg',
-          'static/img/portfolio/jpg/mlotto_UI_picks.jpg',
-          'static/img/portfolio/jpg/mlotto_UI_wallet.jpg',
-          'static/img/portfolio/jpg/jp4_unit.jpg',
-          'static/img/portfolio/jpg/jp4_home_screen.jpg',
-          'static/img/portfolio/jpg/jp4_email.jpg',
-          'static/img/portfolio/jpg/jp4_movie.jpg',
-          'static/img/portfolio/jpg/jp4_movie_parts.jpg',
-          'static/img/portfolio/jpg/jp4_music_album.jpg',
-          'static/img/portfolio/jpg/jp4_music_home.jpg',
-          'static/img/portfolio/jpg/jp4_music.jpg',
-          'static/img/portfolio/jpg/jp4_radio.jpg',
-          'static/img/portfolio/jpg/jp4_commissary.jpg',
-          'static/img/portfolio/jpg/jp3_unit.jpg',
-          'static/img/portfolio/jpg/jp3_screens.jpg',
-          'static/img/portfolio/jpg/jpay_mural.jpg',
-          'static/img/portfolio/jpg/jpay_email.jpg',
-          'static/img/portfolio/jpg/newsletter_hero1.jpg',
-          'static/img/portfolio/jpg/newsletter_hero2.jpg',
-          'static/img/portfolio/jpg/prisonride_home.jpg',
-          'static/img/portfolio/jpg/prisonride_profile.jpg',
-          'static/img/portfolio/jpg/valentina_website.jpg',
-          'static/img/portfolio/jpg/celebrity_cruise_lines.jpg'
+          imgPath + 'CivicInc_Bridge_01.jpg',
+          imgPath + 'CivicInc_Bridge_02.jpg',
+          imgPath + 'CivicInc_Bridge_03.jpg',
+          imgPath + 'CivicInc_Funding_01.jpg',
+          imgPath + 'CivicInc_Funding_02.jpg',
+          imgPath + 'CivicInc_Land_01.jpg',
+          imgPath + 'CivicInc_Land_02.jpg',
+          imgPath + 'jpay_web_home.jpg',
+          imgPath + 'jpay_web_signed_in.jpg',
+          imgPath + 'jpay_web_money.jpg',
+          imgPath + 'jpay_web_email.jpg',
+          imgPath + 'jpay_web_stamps.jpg',
+          imgPath + 'inmate_kiosk.jpg',
+          imgPath + 'inmate_kiosk_UI_home.jpg',
+          imgPath + 'inmate_kiosk_UI_home_signed_in.jpg',
+          imgPath + 'inmate_kiosk_UI_buy_jp3.jpg',
+          imgPath + 'inmate_kiosk_UI_music.jpg',
+          imgPath + 'inmate_kiosk_UI_music_songs_list.jpg',
+          imgPath + 'inmate_kiosk_UI_email_inbox.jpg',
+          imgPath + 'inmate_kiosk_UI_email_read.jpg',
+          imgPath + 'inmate_kiosk_UI_buys.jpg',
+          imgPath + 'inmate_kiosk_UI_manage.jpg',
+          imgPath + 'icons_red.jpg',
+          imgPath + 'jpay_app_home.jpg',
+          imgPath + 'jpay_app_home_prefs.jpg',
+          imgPath + 'jpay_app_money_prefs.jpg',
+          imgPath + 'jpay_app_email.jpg',
+          imgPath + 'jpay_app_logos.jpg',
+          imgPath + 'jpay_app_UI_old.jpg',
+          imgPath + 'jpayinc_website_old.jpg',
+          imgPath + 'jpayinc_website.jpg',
+          imgPath + 'jpayinc_website_responsive.jpg',
+          imgPath + 'jpay_infographgic_cloud.jpg',
+          imgPath + 'jpay_icons_doc.jpg',
+          imgPath + 'icons_doc_parole.jpg',
+          imgPath + 'jpay_icons_cards_kiosk.jpg',
+          imgPath + 'jpay_infographic_01.jpg',
+          imgPath + 'jpay_infographic_02.jpg',
+          imgPath + 'jpay_inforgraphic_money.jpg',
+          imgPath + 'jpay_icons_email.jpg',
+          imgPath + 'mlotto_logo.jpg',
+          imgPath + 'mlotto_screens.jpg',
+          imgPath + 'mlotto_web.jpg',
+          imgPath + 'mlotto_brochure.jpg',
+          imgPath + 'mlotto_UI_home.jpg',
+          imgPath + 'mlotto_UI_play.jpg',
+          imgPath + 'mlotto_UI_favs.jpg',
+          imgPath + 'mlotto_UI_picks.jpg',
+          imgPath + 'mlotto_UI_wallet.jpg',
+          imgPath + 'jp4_unit.jpg',
+          imgPath + 'jp4_home_screen.jpg',
+          imgPath + 'jp4_email.jpg',
+          imgPath + 'jp4_movie.jpg',
+          imgPath + 'jp4_movie_parts.jpg',
+          imgPath + 'jp4_music_album.jpg',
+          imgPath + 'jp4_music_home.jpg',
+          imgPath + 'jp4_music.jpg',
+          imgPath + 'jp4_radio.jpg',
+          imgPath + 'jp4_commissary.jpg',
+          imgPath + 'jp3_unit.jpg',
+          imgPath + 'jp3_screens.jpg',
+          imgPath + 'jpay_mural.jpg',
+          imgPath + 'jpay_email.jpg',
+          imgPath + 'newsletter_hero1.jpg',
+          imgPath + 'newsletter_hero2.jpg',
+          imgPath + 'prisonride_home.jpg',
+          imgPath + 'prisonride_profile.jpg',
+          imgPath + 'valentina_website.jpg',
+          imgPath + 'celebrity_cruise_lines.jpg'
         ]
       }, 2000)
     }
@@ -126,6 +127,10 @@
     @include shadow;
     @include clearfix;
 
+    @media (min-width: 0px) and (max-width: 796px) {
+      min-height: 200px;
+    }
+
     img {
       width: calc(100%);
       height: auto;
@@ -139,7 +144,7 @@
     .VueCarousel-navigation button.VueCarousel-navigation-button.VueCarousel-navigation-prev {
       //
       .navvy {
-        font-size: 1.5em;
+        font-size: 1.75em;
         cursor: pointer;
         color: white;
         -webkit-text-stroke: 1px lighten(grey, 40);

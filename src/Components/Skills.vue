@@ -113,6 +113,8 @@
       // grid-column-gap: 5em;
       // background: yellow;
       grid-row-gap: .75em;
+      justify-content: space-between;
+      justify-items: center;
     }
 
     // @media (max-width: 310px)

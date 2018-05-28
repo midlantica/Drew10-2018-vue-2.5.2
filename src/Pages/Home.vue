@@ -20,7 +20,7 @@
   import HeadAndCopy from '@/Components/HeadAndCopy'
   import About from '@/Components/About'
   import Skills from '@/Components/Skills'
-  // import Quotes from '@/Components/Quotes/QuotesVueCarousel2'
+  // import Quotes from '@/Components/Quotes/QuotesVueCarousel'
   // import Quotes from '@/Components/Quotes/QuotesVueSwiper'
   // import Quotes from '@/Components/Quotes/QuotesSiema'
   // import Quotes from '@/Components/Quotes/QuotesVueAgile'
